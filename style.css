@@ -113,6 +113,18 @@ nav > ul {
 	padding-bottom: 5px;
 }
 
+#logo-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+#logo {
+  color: white;
+  font-size: 24px;
+}
+
 /* Landing */
 .container {
   width: 100%;
