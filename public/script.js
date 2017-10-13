@@ -34,12 +34,12 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
             if ($(this).scrollTop() > 2) {
               console.log('pre grey');
-              $('.search_n_find pre').css({
+              $('.search_n_find .pre').css({
                 color: '#202020'
               });
             } else {
               console.log('pre white');
-              $('.search_n_find pre').css({
+              $('.search_n_find .pre').css({
                 color: '#FFFFFF !important'
               });
             }
@@ -68,7 +68,13 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
               }
 
               if ($(window).scrollTop() < 2) {
-                $(className, 'pre').css({
+                $(className).css({
+                  color: '#FFFFFF'
+                });
+              }
+
+              if ($(window).scrollTop() < 2) {
+                $('.pre').css({
                   color: '#FFFFFF'
                 });
               }
