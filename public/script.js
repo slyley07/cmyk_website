@@ -32,10 +32,12 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     App.controller('mainController', function($scope) {
         // create a message to display in our view
         // $scope.message = 'Landing ... works? !';
-        $(window).scrollTop(0);
-        $(window).scroll(function() {
+        $(document).ready(function() {
+          $(window).scrollTop(0);
+          $(window).scroll(function() {
 
             if ($(this).scrollTop() > 2) {
+              console.log('pre grey');
               $('.search_n_find pre').css({
                 color: '#202020'
               });
@@ -47,27 +49,15 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             }
 
             var scrollingMagic = function (className, scroll, scroll2) {
-
-
               if ($(window).scrollTop() > scroll && $(window).scrollTop() < 500) {
-                console.log(className + ' white');
-                // $(className).animate({
-                //   color: '#FFFFFF'
-                // }, 'fast');
-
                 $(className).css({
                   color: '#FFFFFF'
                 });
               } else if ($(window).scrollTop() > 500) {
-                // $(className).animate({
-                //   color: '#202020'
-                // }, 'fast');
-
                 $(className).css({
-                  color: '#202020'
+                  color: '#3E3D3E'
                 });
               } else {
-                // console.log(className + ' grey');
                 $(className).css({
                   color: '#202020'
                 });
@@ -75,7 +65,6 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
               if (className === ".search_c" || className === ".search_m" || className === ".search_y" || className === ".search_k") {
                 if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 499) {
-                  // console.log(className + ' white');
                   $(className).css({
                     color: '#FFFFFF'
                   });
@@ -83,7 +72,7 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
               }
 
               if ($(window).scrollTop() < 2) {
-                $(className).css({
+                $(className, 'pre').css({
                   color: '#FFFFFF'
                 });
               }
@@ -103,36 +92,38 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             scrollingMagic('.search_y', 600, 300);
             scrollingMagic('.search_k', 650, 400);
           })
+        })
+
     });
 
     App.controller('workController', function($scope) {
         $(window).scrollTop(0);
         (function($){
-            $.fn.extend({ 
+            $.fn.extend({
                 rotaterator: function(options) {
-         
+
                     var defaults = {
                         fadeSpeed: 500,
                         pauseSpeed: 1000,
                         child:null
                     };
-                     
+
                     var options = $.extend(defaults, options);
-                 
+
                     return this.each(function() {
-                        
+
                             var o =options;
-                            var obj = $(this);                
+                            var obj = $(this);
                             var items = $(obj.children(), obj);
-                            
+
                             items.each(function() {$(this).hide();})
-                            
+
                             if(!o.child) {
                                 var next = $(obj).children(':first');
                             } else {
                                 var next = o.child;
                             }
-                            
+
                             $(next).fadeIn(o.fadeSpeed, function() {
                                 $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
                                     var next = $(this).next();
