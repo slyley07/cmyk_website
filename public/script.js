@@ -6,6 +6,11 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 templateUrl: '/views/landing.html'
             })
 
+            .when("/who", {
+              controller: "whoController",
+              templateUrl: "/views/who.html"
+            })
+
             .when("/work", {
                 controller: "workController",
                 templateUrl: "/views/work.html"
@@ -103,7 +108,7 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     });
 
-    App.controller('workController', function($scope) {
+    App.controller('whoController', function($scope) {
         $(window).scrollTop(0);
         (function($){
             $.fn.extend({
@@ -148,8 +153,12 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
     });
 
+    App.controller('workController', function($scope) {
+      $scope.message = 'Work';
+    });
+
     App.controller('contactController', function($scope) {
-        $scope.message = 'COntact';
+        $scope.message = 'Contact';
     });
 
     App.controller('careerController', function($scope) {
@@ -169,4 +178,3 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: '/views/footer.html'
         };
     });
-

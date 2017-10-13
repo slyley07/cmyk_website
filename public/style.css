@@ -77,21 +77,9 @@ a {
   font-size: 8px;
   text-align: center; }
 
+/* nav -- feel free to remove / modify styling for navigation */
 nav {
-  text-align: center;
-}
-
-#logo-container {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: black;
-}
-
-#logo {
-  color: white;
-  font-size: 24px;
-}
+  text-align: center; }
 
 nav > ul {
   padding: 0px;
@@ -104,6 +92,27 @@ nav > ul {
   padding-right: 8px;
   padding-top: 5px;
   padding-bottom: 5px; }
+
+#logo-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black; }
+
+#logo {
+  color: white;
+  font-size: 24px; }
+
+/* Landing */
+/* footer */
+#footer > li {
+  display: inline-block;
+  font-size: 10px; }
+
+/* Career */
+p.job-title {
+  font-size: 24px;
+  padding: 20px 0px; }
 
 /* Landing */
 .container {
@@ -131,5 +140,25 @@ nav > ul {
   background-color: #FFFFFF;
   z-index: 2;
   position: relative; }
+  .landing_nav .landing_logo {
+    width: 37vw;
+    margin: 0 auto;
+    display: block;
+    padding: 5.3vh 0; }
+  .landing_nav .landing_ul {
+    background-color: #000000;
+    height: 79vh;
+    text-align: center; }
+    .landing_nav .landing_ul li {
+      padding: 6.5vh 0; }
+      .landing_nav .landing_ul li a {
+        color: #FFFFFF;
+        font-size: 9vw;
+        font-family: "Didact Gothic", "Roboto Sans", sans-serif;
+        text-transform: uppercase; }
+    .landing_nav .landing_ul hr {
+      width: 90vw;
+      margin: 0 auto;
+      border-top: none; }
 
 /*# sourceMappingURL=style.css.map */
