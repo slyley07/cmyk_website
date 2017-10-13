@@ -99,6 +99,9 @@ a{
 }
 
 /* nav -- feel free to remove / modify styling for navigation */
+nav {
+  text-align: center;
+}
 nav > ul {
 	padding: 0px;
   margin: 0px;
@@ -145,4 +148,20 @@ pre {
   font-size: 46px;
   color: #FFFFFF;
   white-space: pre-line;
+}
+
+/* footer */
+#footer > li {
+  display: inline-block;
+  font-size: 10px;
+}
+
+/* Career */
+p.job-title {
+  font-size: 24px;
+  padding: 20px 0px;
+}
+
+.job-requirements > p {
+
 }

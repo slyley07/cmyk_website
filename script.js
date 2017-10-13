@@ -12,6 +12,11 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 templateUrl: "/views/work.html"
             })
 
+            .when("/career", {
+                controller: "careerController",
+                templateUrl: "/views/career.html"
+            })
+
             .when("/contact", {
                 controller: "contactController",
                 templateUrl: "/views/contact.html"
@@ -154,9 +159,20 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         $scope.message = 'COntact';
     });
 
+    App.controller('careerController', function($scope) {
+        $scope.message = "hey"
+    })
+
     App.directive("navi", function() {
         return {
             restrict : "E",
             templateUrl: '/views/navigation.html'
+        };
+    });
+
+    App.directive("fooder", function() {
+        return {
+            restrict : "E",
+            templateUrl: '/views/footer.html'
         };
     });
