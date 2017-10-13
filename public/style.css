@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,400,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Didact Gothic', sans-serif; }
+
+h1 {
+  font-size: 4em;
+  margin: 0.25em; }
+
+h2 {
+  font-size: 3em;
+  margin: 0.25em; }
+
+h3 {
+  font-size: 2em;
+  margin: 0.25em; }
+
+h4 {
+  font-size: 1.5em;
+  margin: 0.25em; }
+
+h5, h6, p {
+  font-size: 1em;
+  margin: 0.25em; }
+
+img {
+  width: 100%; }
+
+section {
+  min-height: 100vh;
+  max-width: 960px;
+  margin: auto; }
+
+a {
+  text-decoration: none;
+  color: #222; }
+
+#who-we-are-main {
+  background-color: black;
+  color: white;
+  padding-top: 15px;
+  height: 100vh; }
+
+.welcome-text {
+  width: 95%;
+  max-width: 720px;
+  margin: 0 auto; }
+
+#white {
+  color: white; }
+
+#rotate {
+  height: 125px; }
+
+#blurb {
+  text-transform: uppercase; }
+
+.bold {
+  font-size: 35px;
+  font-weight: 700;
+  vertical-align: bottom; }
+
+.top-padding {
+  padding-top: 40px; }
+
+#more {
+  text-align: center;
+  font-size: 8px; }
+
+#scroll {
+  font-size: 8px;
+  text-align: center; }
+
+/* nav -- feel free to remove / modify styling for navigation */
+nav > ul {
+  padding: 0px;
+  margin: 0px; }
+
+#nav > li {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+/* Landing */
+.container {
+  width: 100%;
+  height: 6000px;
+  background-color: black; }
+  .container .search_n_find {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .container .search_n_find pre {
+      font-size: 8.47vw;
+      font-family: Consolas;
+      color: #FFFFFF;
+      white-space: pre-line; }
+
+/*# sourceMappingURL=style.css.map */
