@@ -99,6 +99,9 @@ a{
 }
 
 /* nav -- feel free to remove / modify styling for navigation */
+nav {
+  text-align: center;
+}
 nav > ul {
 	padding: 0px;
   margin: 0px;
@@ -111,6 +114,57 @@ nav > ul {
 	padding-right: 8px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+
+#logo-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+#logo {
+  color: white;
+  font-size: 24px;
+}
+
+/* Landing */
+.container {
+  width: 100%;
+  height: 2000px;
+  background-color: black;
+}
+
+.search_n_find {
+  width: 540px;
+  padding: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+pre {
+  font-size: 46px;
+  color: #FFFFFF;
+  white-space: pre-line;
+}
+
+/* footer */
+#footer > li {
+  display: inline-block;
+  font-size: 10px;
+}
+
+/* Career */
+p.job-title {
+  font-size: 24px;
+  padding: 20px 0px;
+}
+
+.job-requirements > p {
+
 }
 
 @import "./landing.scss";

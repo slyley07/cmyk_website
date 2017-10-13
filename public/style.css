@@ -77,7 +77,22 @@ a {
   font-size: 8px;
   text-align: center; }
 
-/* nav -- feel free to remove / modify styling for navigation */
+nav {
+  text-align: center;
+}
+
+#logo-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+#logo {
+  color: white;
+  font-size: 24px;
+}
+
 nav > ul {
   padding: 0px;
   margin: 0px; }
