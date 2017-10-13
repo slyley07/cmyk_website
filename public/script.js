@@ -1,6 +1,5 @@
 var App = angular.module('CMYKApp', ['ngRoute']);
-// urlRouterProvider
-// routeProvider
+
 App.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
                 controller: 'mainController',
@@ -21,9 +20,6 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 enabled: true,
                 requireBase: false
             });
-            $locationProvider.hashPrefix('!');
-            // $locationProvider.html5Mode(true);
-            // $locationProvider.hashPrefix('!');
 
     }]);
 
