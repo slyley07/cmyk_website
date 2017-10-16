@@ -84,10 +84,6 @@ a{
 	vertical-align: bottom;
 }
 
-.top-padding {
-	padding-top: 40px;
-}
-
 #more {
 	text-align: center;
 	font-size: 8px;
@@ -101,6 +97,7 @@ a{
 /* nav -- feel free to remove / modify styling for navigation */
 nav {
   text-align: center;
+  background-color: white;
 }
 nav > ul {
 	padding: 0px;
@@ -168,3 +165,4 @@ p.job-title {
 }
 
 @import "./landing.scss";
+@import "./about.scss";
