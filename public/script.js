@@ -11,6 +11,11 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 templateUrl: "/views/work.html"
             })
 
+            .when("/about", {
+                controller: "aboutController",
+                templateUrl: "/views/about.html"
+            })
+
             .when("/career", {
                 controller: "careerController",
                 templateUrl: "/views/career.html"
@@ -103,7 +108,7 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     });
 
-    App.controller('workController', function($scope) {
+    App.controller('aboutController', function($scope) {
         $(window).scrollTop(0);
         (function($){
             $.fn.extend({
@@ -146,6 +151,7 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         })(jQuery);
 
         $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
+        $('#hello-image').delay(3000).fadeOut(1000);
     });
 
     App.controller('contactController', function($scope) {
