@@ -6,11 +6,6 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 templateUrl: '/views/landing.html'
             })
 
-            .when("/who", {
-              controller: "whoController",
-              templateUrl: "/views/who.html"
-            })
-
             .when("/work", {
                 controller: "workController",
                 templateUrl: "/views/work.html"
