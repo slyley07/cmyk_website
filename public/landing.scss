@@ -35,4 +35,34 @@
   background-color: #FFFFFF;
   z-index: 2;
   position: relative;
+
+  .landing_logo {
+    width: 37vw;
+    margin: 0 auto;
+    display: block;
+    padding: 5.3vh 0;
+  }
+
+  .landing_ul {
+    background-color: #000000;
+    height: 79vh;
+    text-align: center;
+
+    li {
+      padding: 6.5vh 0;
+
+      a {
+        color: #FFFFFF;
+        font-size: 9vw;
+        font-family: "Didact Gothic", "Roboto Sans", sans-serif;
+        text-transform: uppercase;
+      }
+    }
+
+    hr {
+      width: 90vw;
+      margin: 0 auto;
+      border-top: none;
+    }
+  }
 }

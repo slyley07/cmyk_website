@@ -6,6 +6,11 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 templateUrl: '/views/landing.html'
             })
 
+            .when("/who", {
+              controller: "whoController",
+              templateUrl: "/views/who.html"
+            })
+
             .when("/work", {
                 controller: "workController",
                 templateUrl: "/views/work.html"
@@ -154,8 +159,12 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         $('#hello-image').delay(3000).fadeOut(1000);
     });
 
+    App.controller('workController', function($scope) {
+      $scope.message = 'Work';
+    });
+
     App.controller('contactController', function($scope) {
-        $scope.message = 'COntact';
+        $scope.message = 'Contact';
     });
 
     App.controller('careerController', function($scope) {
@@ -175,4 +184,3 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             templateUrl: '/views/footer.html'
         };
     });
-
