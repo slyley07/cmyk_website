@@ -161,4 +161,24 @@ p.job-title {
       margin: 0 auto;
       border-top: none; }
 
+.work-container {
+  width: 90.6vw;
+  margin: 0 auto; }
+  .work-container h4 {
+    color: #000000;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 3.9vw;
+    text-transform: uppercase; }
+    .work-container h4 .more {
+      color: #9B9B9B;
+      font-size: 2.5vw;
+      text-transform: lowercase; }
+  .work-container .apa .apa_1,
+  .work-container .apa .apa_left {
+    display: inline-block; }
+  .work-container .apa .apa_1 {
+    width: 42.9vw; }
+  .work-container .apa .apa_2 {
+    width: 36.4vw; }
+
 /*# sourceMappingURL=style.css.map */
