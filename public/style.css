@@ -53,8 +53,8 @@ nav > ul {
   display: inline-block;
   font-size: 12px;
   flex: 1;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-top: 8px;
+  padding-bottom: 8px; }
 
 #logo-container {
   width: 100%;
@@ -262,7 +262,73 @@ hr#job-divider {
   margin-top: 20px;
 }
 
+/* Contact */ 
+.contact-container {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.contact-info > div {
+  flex: 1;
+}
+
+.menu-font {
+  font-size: 12px;
+}
+
+.contact-title {
+  margin: 0 0 15px 0;
+  border-left: 1px solid black;
+  padding-left: 5px;
+}
+
+.contact-form > input {
+  font-size: 12px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.contact-form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+textarea {
+  font-size: 12px;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+#submit-btn {
+  float: right;
+  width: 100px;
+  font-size: 18px !important;
+  text-transform: uppercase !important;
+  color:gray !important;
+  border: none;
+  padding: 10px 0;
+  background-color: white;
+}
+
+.map {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(244,244,244);
+  text-align: center;
+}
 
 @media screen and (max-width: 330px) {
   #nav > li {

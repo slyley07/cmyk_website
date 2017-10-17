@@ -43,7 +43,7 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
           $(window).scroll(function() {
 
             if ($(this).scrollTop() > 2) {
-              console.log('pre grey');
+              // console.log('pre grey');
               $('.search_n_find .pre').css({
                 color: '#202020'
               });
@@ -158,8 +158,69 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       $scope.message = 'Work';
     });
 
-    App.controller('contactController', function($scope) {
-        $scope.message = 'Contact';
+    App.controller('contactController', function($scope, $http) {
+        // google url = https://script.google.com/macros/u/0/s/AKfycbz54PSGzLCWUZGmI2iHBkFXTFX5mlagA7STIP-v6_yjQe3sxNE/exec
+        $scope.contactUs = function (user) {
+            console.log("user: ", user)
+
+            var googleURL = "https://script.google.com/macros/u/0/s/AKfycbz54PSGzLCWUZGmI2iHBkFXTFX5mlagA7STIP-v6_yjQe3sxNE/exec";
+            // HTTP 
+
+            $.ajax({
+                url: googleURL,
+                data: user,
+                type: "get",
+                success: function(data) {
+                        console.log('Submission successful');
+                        // $('.form_div').hide();
+                        // $('.para').show();
+                },
+                error: function(xhr, status, error) {
+                        console.log('Submission failed: ' + error);
+                        // $('.form_div').hide();
+                        // $('.para').show();
+                        // $('.move_down').css({
+                        //     "padding": "50% 0 0",
+                        //     "transform": "translate(0, -50%)"
+                        // })
+                }
+            });
+                
+
+            // $http.get(googleURL, user).
+            //   success(function(results) {
+            //     console.log('Submission successful');
+            //     console.log(results);
+            //   }).
+            //   error(function(error) {
+            //     console.log(error);
+            //   });
+
+            // From now newyork
+            // $('form').submit(function(e) {
+            //     e.preventDefault();
+            //     $.ajax({
+            //             url: "https://script.google.com/macros/s/AKfycbxxlFSFaqhLzdNTaS4Wd3DxxK5QeT7ExJQPbGc5fISnJSlju4zs/exec",
+            //             data: $(this).serialize(),
+            //             type: "get",
+            //             success: function(data) {
+            //                     console.log('Submission successful');
+            //                     $('.form_div').hide();
+            //                     $('.para').show();
+            //             },
+            //             error: function(xhr, status, error) {
+            //                     console.log('Submission failed: ' + error);
+            //                     $('.form_div').hide();
+            //                     $('.para').show();
+            //                     $('.move_down').css({
+            //                         "padding": "50% 0 0",
+            //                         "transform": "translate(0, -50%)"
+            //                     })
+            //             }
+            //         });
+            //     });
+            // }
+        };
     });
 
     App.controller('careerController', function($scope) {
