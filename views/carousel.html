@@ -1,0 +1,14 @@
+<section ng-carousel>
+  <nav ng-swipe-left="showNext()" ng-swipe-right="showPrev()">
+    <div ng-hide="firstSlide" ng-click="showPrev()">
+      <i class="fa fa-4x fa-caret-left"></i>
+    </div>
+    <div ng-hide="lastSlide" ng-click="showNext()">
+      <i class="fa fa-4x fa-caret-right"></i>
+    </div>
+  </nav>
+
+  <div ng-repeat="link in links">
+    <img ng-src="{{link.src}}" />
+  </div>
+</section>

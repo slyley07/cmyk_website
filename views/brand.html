@@ -1,0 +1,17 @@
+<navi></navi>
+
+<div class="brand_container">
+  <img ng-src="{{brandData.logo}}" alt="">
+
+  <p>
+    {{brandData.desc}}
+  </p>
+
+  <div ng-repeat="section in brandData.sections">
+    <carousel links="section.secImages"></carousel>
+  </div>
+</div>
+
+
+
+<fooder></fooder>
