@@ -155,13 +155,14 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     });
 
     App.controller('workController', function($scope) {
+        $(window).scrollTop(0);
       $scope.message = 'Work';
     });
 
     App.controller('contactController', function($scope, $http) {
+        $(window).scrollTop(0);
 
         $scope.contactUs = function (user) {
-            console.log("user: ", user)
             $(window).scrollTop(0);
             var googleURL = "https://script.google.com/macros/u/0/s/AKfycbz54PSGzLCWUZGmI2iHBkFXTFX5mlagA7STIP-v6_yjQe3sxNE/exec";
             // HTTP 
@@ -172,10 +173,14 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
                 success: function(data) {
                     console.log('Submission successful');
                     $('#modal').show();
+                    $('input').val("");
+                    $scope.user = {};
                 },
                 error: function(xhr, status, error) {
                     console.log('Submission failed: ' + error);
                     $('#modal').show();
+                    $('input').val("");
+                    $scope.user = {};
                 }
             });
         };
@@ -186,8 +191,8 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     });
 
     App.controller('careerController', function($scope) {
-        $scope.message = "hey"
-    })
+        $(window).scrollTop(0);
+    });
 
     App.directive("navi", function() {
         return {

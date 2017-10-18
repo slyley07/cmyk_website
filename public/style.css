@@ -41,40 +41,6 @@ a {
   text-decoration: none;
   color: #222; }
 
-#who-we-are-main {
-  background-color: black;
-  color: white;
-  padding-top: 15px;
-  height: 100vh; }
-
-.welcome-text {
-  width: 95%;
-  max-width: 720px;
-  margin: 0 auto; }
-
-#white {
-  color: white; }
-
-#rotate {
-  height: 125px; }
-
-#blurb {
-  text-transform: uppercase; }
-
-.bold {
-  font-size: 35px;
-  font-weight: 700;
-  vertical-align: bottom; }
-
-#more {
-  text-align: center;
-  font-size: 8px; }
-
-#scroll {
-  font-size: 8px;
-  text-align: center; }
-
-/* nav -- feel free to remove / modify styling for navigation */
 nav {
   text-align: center;
   background-color: white; }
@@ -87,9 +53,10 @@ nav > ul {
   text-transform: uppercase;
   display: inline-block;
   font-size: 12px;
-  padding-right: 8px;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  flex: 1;
+  padding-top: 8px;
+  padding-bottom: 8px; 
+}
 
 #logo-container {
   width: 100%;
@@ -100,17 +67,6 @@ nav > ul {
 #logo {
   color: white;
   font-size: 24px; }
-
-/* Landing */
-/* footer */
-#footer > li {
-  display: inline-block;
-  font-size: 10px; }
-
-/* Career */
-p.job-title {
-  font-size: 24px;
-  padding: 20px 0px; }
 
 /* Landing */
 .container {
@@ -255,48 +211,64 @@ p.job-title {
 }
 
 
-/* Who We Are */
+/*------------ Who We Are (/About) -------------- */
 .about-container {
   width: 100%;
   height: 100vh;
-  background-color: black; }
+  background-color: black;
+  font-family: "Didact Gothic", sans-serif;
+}
 
 #who-we-are-main {
+  position: relative;
   width: 100vw;
   margin: 0 auto;
   padding-top: 15px;
-  top: 50%;
-  left: 50%;
-  background-color: black; }
+  background-color: black;
+}
+
+#hello-image {
+  width: 100vw;
+  height: 115%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+}
 
 .wk-content {
   width: 95vw;
-  margin: 0 auto;
-  font-size: 6.47vw;
-  color: #FFFFFF; }
+    margin: 0 auto;
+    font-size: 6.47vw;
+    color: #FFFFFF;
+    font-family: 'Didact Gothic';
+}
 
 #who-we-are {
-  font-size: 7.5vw; }
+  font-size: 7.5vw;
+}
 
 #rotate {
   height: 125px;
-  height: 46.5vw; }
+  height: 46.5vw; 
+}
 
 #blurb {
-  text-transform: uppercase;
-  font-size: 7.5vw; }
+  text-transform: uppercase; font-size: 7.5vw;}
 
 .bold {
   font-size: 14.5vw;
   font-weight: 700;
   vertical-align: bottom;
-  line-height: 1.1; }
+  line-height: 1.1; 
+}
 
 .top-padding {
   padding-top: 40px; }
 
 #bottom {
-  padding-top: 10px; }
+  padding-top: 10px;
+}
 
 #more {
   text-align: center;
@@ -305,7 +277,74 @@ p.job-title {
 #scroll {
   font-size: 8px;
   text-align: center; }
-  
+
+.flex-container {
+  display: flex;
+}
+
+#footer > li {
+  list-style: none;
+  display: inline-block;
+  padding: 9px 0;
+  align-items: center;
+}
+
+#copyright {
+  font-size: 8px;
+}
+
+#copyright > a {
+  display: inline-block;
+  margin-top: 13px
+}
+
+#career-link {
+  font-size: 15px;
+}
+
+#career-link > a {
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.fb-icon, .ig-icon {
+  text-align: center;
+}
+
+.fb-icon > img {
+  width: 38px;
+}
+
+.ig-icon > img {
+  width: 40px;
+}
+
+/* Career */ 
+.job-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+p.job-title {
+  font-size: 5vw;
+  padding: 10px 0px;
+}
+
+div.job-requirements > p {
+  font-size: 12px;
+}
+
+hr#job-divider {
+  margin-top: 20px;
+}
+
+/* Contact */ 
+.contact-container {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
 .contact-info {
   display: flex;
   justify-content: space-between;
@@ -407,6 +446,5 @@ textarea {
     font-size: 11px;
   }
 }
-
 
 /*# sourceMappingURL=style.css.map */
