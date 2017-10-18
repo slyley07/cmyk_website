@@ -23,9 +23,37 @@
 		</form>
 	</div>
 </div>
-
 <div class="map">
-	MAP
+	<div id="map"></div>
+</div>
+<fooder></fooder>
+
+<div id="modal">
+	<div id="thank-you">
+		<div id="clear-this">
+			<button id="close">X</button>
+		</div>
+		
+		<p style="font-size: 24px;">
+			Thank you for<br/> submitting!
+		</p>
+		<p style="font-size: 12px;">Loren ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
 </div>
 
-<fooder></fooder>              
+<script type="text/javascript">
+	function initMap() {
+        var cmyk = {lat: 40.752097, lng: -73.984907};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: cmyk
+        });
+        var marker = new google.maps.Marker({
+          position: cmyk,
+          map: map
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW7lgWl3UVRvb3F-kzvferGZ03SXvZgdg&callback=initMap">
+</script>
