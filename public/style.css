@@ -300,6 +300,7 @@ p.job-title {
   .work-container .little_d .ld_1 {
     grid-column: 2 / 3; }
   .work-container .little_d .ld_2 {
-    grid-column: 1 / 4; }
+    grid-column: 1 / 4;
+    margin-top: 5vw; }
 
 /*# sourceMappingURL=style.css.map */
