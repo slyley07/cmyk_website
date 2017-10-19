@@ -1,0 +1,33 @@
+#carousel {
+  ul {
+    .item {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.indicators {
+  ul {
+    text-align: right;
+    margin-right: 3vw;
+
+    li {
+      display: inline-block;
+      margin: 1vw;
+
+      .indicator {
+        width: 5.46vw;
+        height: 0.7vw;
+        background-color: #D2D0D2;
+
+        &.active {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+}

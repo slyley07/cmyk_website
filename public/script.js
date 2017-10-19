@@ -1,4 +1,4 @@
-var App = angular.module('CMYKApp', ['ngRoute', 'ngCookies']);
+var App = angular.module('CMYKApp', ['ngRoute', 'ngCookies', 'ngTouch']);
 
 App.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider.when('/', {
@@ -283,13 +283,33 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       return {
         restrict: 'E',
         scope: {
-          links: '='
+          links: '=',
+          indy: '='
         },
         templateUrl: "/views/carousel.html",
         link: function(scope, element) {
           $timeout(function() {
-            $('.carousel-indicators li',element).first().addClass('active');
-            $('.carousel-inner .item',element).first().addClass('active');
+            $('.indicators li .indicator',element).first().addClass('active');
+            $('#carousel li.item',element).first().addClass('active');
+
+            scope.changeItem = function(index, swipe, cara) {
+              if (swipe === 'right' && index === -1) {
+                return;
+              }
+
+              if (swipe === 'left' && index === $('#cara-' + cara + ' #carousel li.item').length) {
+                return;
+              }
+
+              $('#cara-' + cara + ' #carousel li.item').each(function(ind) {
+                if ($(this).hasClass('active') && ind !== index) {
+                  $(this).removeClass('active');
+                  $('#cara-' + cara + ' .indicators li .indicator:eq(' + ind + ')').removeClass('active');
+                  $('#cara-' + cara + ' #carousel li.item:eq(' + index + ')').addClass('active');
+                  $('#cara-' + cara + ' .indicators li .indicator:eq(' + index + ')').addClass('active');
+                }
+              })
+            }
           });
         }
       }

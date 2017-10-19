@@ -1,14 +1,18 @@
-<section ng-carousel>
-  <nav ng-swipe-left="showNext()" ng-swipe-right="showPrev()">
-    <div ng-hide="firstSlide" ng-click="showPrev()">
-      <i class="fa fa-4x fa-caret-left"></i>
-    </div>
-    <div ng-hide="lastSlide" ng-click="showNext()">
-      <i class="fa fa-4x fa-caret-right"></i>
-    </div>
-  </nav>
+<div id="carousel">
+  <ul>
+    <li class="item" ng-repeat="link in links track by $index">
+      <img ng-swipe-right="changeItem($index - 1, 'right', indy)"
+      ng-swipe-left="changeItem($index + 1, 'left', indy)"
+      ng-src="{{link.src}}" />
+    </li>
+  </ul>
 
-  <div ng-repeat="link in links">
-    <img ng-src="{{link.src}}" />
+  <div class="indicators">
+    <ul>
+      <li ng-repeat="link in links track by $index">
+        <div ng-click="changeItem($index, links, indy)" class="indicator">
+        </div>
+      </li>
+    </ul>
   </div>
-</section>
+</div>
