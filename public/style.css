@@ -251,97 +251,158 @@ p.job-title {
 .ig-icon > img {
   width: 40px; }
 
-.work-container h4 {
-  color: #000000;
-  font-family: "Didact Gothic", sans-serif;
-  font-size: 4.9vw;
-  text-transform: uppercase;
-  margin: 0; }
-  .work-container h4 .more {
-    color: #9B9B9B;
-    font-size: 3.5vw;
-    text-transform: lowercase; }
-.work-container .apa,
-.work-container .bobbi_brown,
-.work-container .flirt,
-.work-container .la_mer,
-.work-container .little_d {
-  width: 90.6vw;
-  margin: 0 auto; }
-.work-container .bobbi_brown,
-.work-container .estee_lauder,
-.work-container .flirt,
-.work-container .la_mer,
-.work-container .saturday_skin,
-.work-container .little_d {
-  margin-top: 17.5vw; }
-.work-container .apa {
-  width: 90.6vw;
-  margin: 0 auto;
-  font-size: 0;
-  display: grid;
-  grid-template-columns: 42.9vw 39.8vw;
-  grid-column-gap: 7vw; }
-  .work-container .apa .apa_1 {
-    width: 42.9vw;
-    grid-column: 1 / 2; }
-  .work-container .apa .apa_left {
-    grid-column: 2 / 3; }
-    .work-container .apa .apa_left .brand_name {
-      margin-top: 22.3vw; }
-    .work-container .apa .apa_left .apa_2 {
-      width: 36.4vw;
-      margin: 11vw 0 0 4.3vw; }
-.work-container .bobbi_brown .brand_name {
-  margin-top: 5vw; }
-.work-container .estee_lauder {
-  display: grid;
-  grid-template-columns: 22.5vw 25.3vw 8vw 5.5vw 33.9vw;
-  grid-template-rows: 15.1vw 20.4vw 5vw 5.6vw auto; }
-  .work-container .estee_lauder .el_1 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3; }
-  .work-container .estee_lauder .brand_name {
-    grid-column: 2 / 4;
-    grid-row: 4 / 5; }
-  .work-container .estee_lauder .el_2 {
-    grid-column: 5 / 6;
-    grid-row: 2 / 6; }
-.work-container .flirt {
-  display: grid;
-  grid-template-columns: 61vw 5.3vw auto;
-  align-items: center; }
-  .work-container .flirt .flirt_1 {
-    grid-column: 1 / 2; }
-  .work-container .flirt .brand_name {
-    grid-column: 3 / 4; }
-.work-container .la_mer {
-  display: grid;
-  grid-template-columns: auto 53vw 8.4vw;
-  align-items: center; }
-.work-container .saturday_skin {
-  display: grid;
-  grid-template-columns: 26vw 7.4vw 10vw 25.3vw 26.4vw;
-  grid-template-rows: 13.7vw 5.6vw 12.6vw 6.8vw 25.5vw; }
-  .work-container .saturday_skin .ss_1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2; }
-  .work-container .saturday_skin .brand_name {
-    grid-column: 3 / 5;
-    grid-row: 3 / 4; }
-  .work-container .saturday_skin .ss_2 {
-    grid-column: 4 / 6;
-    grid-row: 5 / 7; }
-.work-container .little_d {
-  display: grid;
-  grid-template-columns: 49.5vw 32.5vw auto;
-  align-items: center; }
-  .work-container .little_d .brand_name {
-    grid-column: 1 / 2; }
-  .work-container .little_d .ld_1 {
-    grid-column: 2 / 3; }
-  .work-container .little_d .ld_2 {
-    grid-column: 1 / 4;
+.work-container {
+  margin-top: 6.7vw; }
+  .work-container h4 {
+    color: #000000;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 4.9vw;
+    text-transform: uppercase;
+    margin: 0; }
+    .work-container h4 .more {
+      color: #9B9B9B;
+      font-size: 3.5vw;
+      text-transform: lowercase; }
+  .work-container .apa,
+  .work-container .bobbi_brown,
+  .work-container .flirt,
+  .work-container .la_mer,
+  .work-container .little_d {
+    width: 90.6vw;
+    margin: 0 auto; }
+  .work-container .bobbi_brown,
+  .work-container .estee_lauder,
+  .work-container .flirt,
+  .work-container .la_mer,
+  .work-container .saturday_skin,
+  .work-container .little_d {
+    margin-top: 17.5vw; }
+  .work-container .apa {
+    width: 90.6vw;
+    margin: 0 auto;
+    font-size: 0;
+    display: grid;
+    grid-template-columns: 42.9vw 39.8vw;
+    grid-column-gap: 7vw; }
+    .work-container .apa .apa_1 {
+      width: 42.9vw;
+      grid-column: 1 / 2; }
+    .work-container .apa .apa_left {
+      grid-column: 2 / 3; }
+      .work-container .apa .apa_left .brand_name {
+        margin-top: 22.3vw; }
+      .work-container .apa .apa_left .apa_2 {
+        width: 36.4vw;
+        margin: 11vw 0 0 4.3vw; }
+  .work-container .bobbi_brown .brand_name {
     margin-top: 5vw; }
+  .work-container .estee_lauder {
+    display: grid;
+    grid-template-columns: 13.5vw 34.3vw 8vw 5.5vw 33.9vw;
+    grid-template-rows: 15.1vw 20.4vw 5vw 5.6vw auto; }
+    .work-container .estee_lauder .el_1 {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3; }
+    .work-container .estee_lauder .brand_name {
+      grid-column: 2 / 4;
+      grid-row: 4 / 5; }
+    .work-container .estee_lauder .el_2 {
+      grid-column: 5 / 6;
+      grid-row: 2 / 6; }
+  .work-container .flirt {
+    display: grid;
+    grid-template-columns: 61vw 5.3vw auto;
+    align-items: center; }
+    .work-container .flirt .flirt_1 {
+      grid-column: 1 / 2; }
+    .work-container .flirt .brand_name {
+      grid-column: 3 / 4; }
+  .work-container .la_mer {
+    display: grid;
+    grid-template-columns: auto 53vw 8.4vw;
+    align-items: center; }
+  .work-container .saturday_skin {
+    display: grid;
+    grid-template-columns: 26vw 7.4vw 10vw 34.3vw 17.4vw;
+    grid-template-rows: 13.7vw 5.6vw 12.6vw 6.8vw 25.5vw; }
+    .work-container .saturday_skin .ss_1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2; }
+    .work-container .saturday_skin .brand_name {
+      grid-column: 3 / 5;
+      grid-row: 3 / 4; }
+    .work-container .saturday_skin .ss_2 {
+      grid-column: 4 / 6;
+      grid-row: 5 / 7; }
+  .work-container .little_d {
+    display: grid;
+    grid-template-columns: 49.5vw 32.5vw auto;
+    align-items: center; }
+    .work-container .little_d .brand_name {
+      grid-column: 1 / 2; }
+    .work-container .little_d .ld_1 {
+      grid-column: 2 / 3; }
+    .work-container .little_d .ld_2 {
+      grid-column: 1 / 4;
+      margin-top: 5vw; }
+
+.brand_container {
+  margin: 8.9vw 0 21vw; }
+  .brand_container .brand_logo {
+    display: block;
+    margin: 0 auto; }
+    .brand_container .brand_logo.apa {
+      width: 30.6vw; }
+    .brand_container .brand_logo.bobbi_brown {
+      width: 42.9vw; }
+    .brand_container .brand_logo.estee_lauder {
+      width: 44vw; }
+    .brand_container .brand_logo.flirt {
+      width: 19.3vw; }
+    .brand_container .brand_logo.la_mer {
+      width: 30.1vw; }
+    .brand_container .brand_logo.saturday_skin {
+      width: 20.6vw; }
+    .brand_container .brand_logo.little_d {
+      width: 27.9vw; }
+  .brand_container .brand_desc {
+    font-size: 3.1vw;
+    text-align: center;
+    margin: 5vw auto 0;
+    width: 90.6vw; }
+  .brand_container .sections {
+    margin-top: 8.4vw; }
+    .brand_container .sections #carousel {
+      font-size: 0; }
+      .brand_container .sections #carousel .items {
+        height: 56.25vw; }
+        .brand_container .sections #carousel .items .item {
+          display: none; }
+          .brand_container .sections #carousel .items .item.active {
+            display: block; }
+      .brand_container .sections #carousel .indicators {
+        margin: 4vw 0; }
+        .brand_container .sections #carousel .indicators ul {
+          text-align: right;
+          margin-right: 3vw;
+          font-size: 0; }
+          .brand_container .sections #carousel .indicators ul li {
+            display: inline-block;
+            margin: 1vw; }
+            .brand_container .sections #carousel .indicators ul li .indicator {
+              width: 5.46vw;
+              height: 0.7vw;
+              background-color: #D2D0D2; }
+              .brand_container .sections #carousel .indicators ul li .indicator.active {
+                background-color: #000000; }
+    .brand_container .sections .section_name,
+    .brand_container .sections .section_desc {
+      width: 90.6vw;
+      margin: 0 auto; }
+    .brand_container .sections .section_name {
+      font-size: 3.75vw;
+      margin-bottom: 0.9vw; }
+    .brand_container .sections .section_desc {
+      font-size: 2.5vw; }
 
 /*# sourceMappingURL=style.css.map */
