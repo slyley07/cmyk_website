@@ -1,14 +1,25 @@
 <navi></navi>
 
 <div class="brand_container">
-  <img ng-src="{{brandData.logo}}" alt="">
+  <img ng-src="{{brandData.logo}}" class="{{brandData.class}} brand_logo" alt="">
 
-  <p>
+  <p class="brand_desc">
     {{brandData.desc}}
   </p>
 
-  <div ng-repeat="section in brandData.sections">
-    <carousel id="cara-{{$index}}" indy="$index" links="section.secImages"></carousel>
+  <div class="sections" ng-repeat="section in brandData.sections">
+
+    <div ng-if="section.secType === 'carousel'">
+      <carousel id="cara-{{$index}}" indy="$index" links="section.secImages"></carousel>
+    </div>
+
+    <h4 class="section_name">
+      {{section.secName}}
+    </h4>
+
+    <p class="section_desc">
+      {{section.secDesc}}
+    </p>
   </div>
 </div>
 

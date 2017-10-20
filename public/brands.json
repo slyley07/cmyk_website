@@ -2,15 +2,184 @@
   {
     "name": "APA",
     "logo": "/images/brands/apa/apa_logo.png",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "class": "apa",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
     "sections" : [
       {
-        "type": "carousel",
-        "secName": "Branding &amp; Identity",
-        "secDesc": "Lorem ipsum dolor sit amet",
+        "secType": "carousel",
+        "secName": "Branding & Identity",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
         "secImages": [
           {
             "src": "/images/brands/apa/apa_booklet.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_product_design_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_motion_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Packaging",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/apa/apa_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_product_design_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_booklet.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_motion_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Product Design",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/apa/apa_product_design_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_booklet.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Social",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/apa/apa_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_product_design_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_booklet.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Motion",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/apa/apa_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_booklet.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_product_design_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/apa/apa_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BOBBI BROWN",
+    "logo": "/images/brands/bobbi_brown/bb_logo.png",
+    "class": "bobbi_brown",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "sections" : [
+      {
+        "secType": "carousel",
+        "secName": "Branding & Identity",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/bobbi_brown/bb_video_1.png",
             "alt": "",
             "caption": ""
           },
@@ -35,14 +204,470 @@
             "caption": ""
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "ESTEE LAUDER",
+    "logo": "/images/brands/estee_lauder/el_logo.png",
+    "class": "estee_lauder",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "sections" : [
       {
-        "type": "carousel",
-        "secName": "Packaging",
-        "secDesc": "Lorem ipsum dolor sit amet",
+        "secType": "carousel",
+        "secName": "Branding & Identity",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
         "secImages": [
           {
-            "src": "/images/brands/apa/apa_packaging_1.png",
+            "src": "/images/brands/estee_lauder/el_editorial_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/estee_lauder/el_interactive_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/estee_lauder/el_motion_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Interactive",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/estee_lauder/el_interactive_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/estee_lauder/el_editorial_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/estee_lauder/el_motion_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Motion",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/estee_lauder/el_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/estee_lauder/el_editorial_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/estee_lauder/el_interactive_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "FLIRT",
+    "logo": "/images/brands/flirt/flirt_logo.png",
+    "class": "flirt",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "sections" : [
+      {
+        "secType": "carousel",
+        "secName": "Packaging",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/flirt/flirt_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/flirt/flirt_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Social & PR",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/flirt/flirt_social_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/flirt/flirt_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LA MER",
+    "logo": "/images/brands/la_mer/lm_logo.png",
+    "class": "la_mer",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "sections" : [
+      {
+        "secType": "carousel",
+        "secName": "Packaging",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/la_mer/lm_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/la_mer/lm_editorial_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/la_mer/lm_pr_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Editorial & Print",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/la_mer/lm_editorial_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/la_mer/lm_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/la_mer/lm_pr_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "PR",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/la_mer/lm_pr_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/la_mer/lm_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "http://via.placeholder.com/320x180",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/la_mer/lm_editorial_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SATURDAY SKIN",
+    "logo": "/images/brands/saturday_skin/ss_logo.png",
+    "class": "saturday_skin",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "sections" : [
+      {
+        "secType": "carousel",
+        "secName": "Branding & Identity",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/saturday_skin/ss_branding_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_digital_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_content_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Packaging",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/saturday_skin/ss_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_branding_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_digital_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_content_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Content Creation",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/saturday_skin/ss_content_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_digital_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_branding_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Digital",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/saturday_skin/ss_digital_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_content_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_branding_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      },
+      {
+        "secType": "carousel",
+        "secName": "Motion",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/saturday_skin/ss_motion_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_content_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_packaging_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_digital_1.png",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/images/brands/saturday_skin/ss_branding_1.png",
+            "alt": "",
+            "caption": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LITTLE D",
+    "logo": "/images/brands/little_d/ld_logo.png",
+    "class": "little_d",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "sections" : [
+      {
+        "secType": "carousel",
+        "secName": "Branding & Identity",
+        "secDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore magna aliqua. Ut enim ad minim veniam.",
+        "secImages": [
+          {
+            "src": "/images/brands/little_d/ld_motion_1.png",
             "alt": "",
             "caption": ""
           },

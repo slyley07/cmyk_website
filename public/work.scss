@@ -1,6 +1,6 @@
 .work-container {
   // width: 90.6vw;
-  // margin: 0 auto;
+  margin-top: 6.7vw;
 
   h4 {
     color: #000000;
@@ -15,8 +15,6 @@
       text-transform: lowercase;
     }
   }
-
-
 
   .apa,
   .bobbi_brown,
@@ -75,7 +73,7 @@
   .estee_lauder {
     // margin-top: 17.5vw;
     display: grid;
-    grid-template-columns: 22.5vw 25.3vw 8vw 5.5vw 33.9vw;
+    grid-template-columns: 13.5vw 34.3vw 8vw 5.5vw 33.9vw;
     grid-template-rows: 15.1vw 20.4vw 5vw 5.6vw auto;
 
     .el_1 {
@@ -116,7 +114,7 @@
 
   .saturday_skin {
     display: grid;
-    grid-template-columns: 26vw 7.4vw 10vw 25.3vw 26.4vw;
+    grid-template-columns: 26vw 7.4vw 10vw 34.3vw 17.4vw;
     grid-template-rows: 13.7vw 5.6vw 12.6vw 6.8vw 25.5vw;
 
     .ss_1 {
