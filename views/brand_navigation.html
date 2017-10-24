@@ -1,0 +1,39 @@
+<div id="logo-container">
+	<p><a id="logo" href="/">CMYK+WHITE</a></p>
+</div>
+<nav>
+	<ul id="nav" class="flex-container">
+		<li>
+      <a href="/about">
+        Who We Are
+      </a>
+    </li>
+
+		<li>
+      <a href="#">
+        What We Do
+        <img src="/images/brand_dd.png" alt="Drop Down Arrow">
+      </a>
+
+      <ul class="brand_dd">
+        <li ng-repeat="brand in brands">
+          <a href="/brand" ng-click="pickBrand(brand)">
+            {{ Brand }}
+          </a>
+        </li>
+      </ul>
+    </li>
+
+		<li>
+      <a href="https://www.designplusshop.com/">
+        Design + Shop
+      </a>
+    </li>
+
+		<li>
+      <a href="/contact">
+        Contact Us
+      </a>
+    </li>
+	</ul>
+</nav>
