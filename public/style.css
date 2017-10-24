@@ -48,7 +48,6 @@ a {
   height: 100vh; }
 
 .welcome-text {
-  width: 95%;
   max-width: 720px;
   margin: 0 auto; }
 
@@ -83,13 +82,18 @@ nav > ul {
   padding: 0px;
   margin: 0px; }
 
+#nav {
+  display: flex;
+}
+
 #nav > li {
   text-transform: uppercase;
   display: inline-block;
   font-size: 12px;
-  padding-right: 8px;
   padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px; 
+  flex: 1;
+}
 
 #logo-container {
   width: 100%;
@@ -229,14 +233,14 @@ p.job-title {
   align-items: center; }
 
 #copyright {
-  font-size: 8px; }
+  font-size: 8px !important;}
 
 #copyright > a {
   display: inline-block;
   margin-top: 13px; }
 
 #career-link {
-  font-size: 15px; }
+  font-size: 15px !important;}
 
 #career-link > a {
   display: inline-block;
@@ -404,5 +408,12 @@ p.job-title {
       margin-bottom: 0.9vw; }
     .brand_container .sections .section_desc {
       font-size: 2.5vw; }
+
+
+@media screen and (max-width: 325px) {
+  #nav > li {
+    font-size: 11px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

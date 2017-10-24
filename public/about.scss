@@ -6,7 +6,7 @@
   font-family: "Didact Gothic", sans-serif;
 }
 
-#who-we-are-main {
+#who-we-are-container {
   position: relative;
   width: 100vw;
   margin: 0 auto;
@@ -77,7 +77,7 @@
 }
 
 #copyright {
-  font-size: 8px;
+  font-size: 8px !important;
 }
 
 #copyright > a {
@@ -86,7 +86,7 @@
 }
 
 #career-link {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 #career-link > a {

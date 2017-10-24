@@ -43,7 +43,6 @@ img {
 }
 
 section {
-  min-height: 100vh;
   max-width: 960px;
   margin: auto;
 }
@@ -108,9 +107,9 @@ nav > ul {
 	text-transform: uppercase;
 	display: inline-block;
 	font-size: 12px;
-	padding-right: 8px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+  flex: 1;
 }
 
 
@@ -148,11 +147,6 @@ nav > ul {
 //   white-space: pre-line;
 // }
 
-/* footer */
-#footer > li {
-  display: inline-block;
-  font-size: 10px;
-}
 
 /* Career */
 p.job-title {
