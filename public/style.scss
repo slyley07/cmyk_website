@@ -112,7 +112,6 @@ nav > ul {
   flex: 1;
 }
 
-
 #logo-container {
   width: 100%;
   padding: 20px;
@@ -158,6 +157,7 @@ p.job-title {
 @import "./landing.scss";
 @import "./about.scss";
 @import "./work.scss";
+@import "./brand_nav.scss";
 @import "./brand.scss";
 @import "./career.scss";
 @import "./contact.scss";

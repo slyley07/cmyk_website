@@ -1,6 +1,11 @@
 <div id="logo-container">
-	<p><a id="logo" href="/">CMYK+WHITE</a></p>
+	<p>
+		<a id="logo" href="/">
+			CMYK+WHITE
+		</a>
+	</p>
 </div>
+
 <nav>
 	<ul id="nav" class="flex-container">
 		<li>
@@ -10,17 +15,37 @@
     </li>
 
 		<li>
-      <a href="#">
+      <div class="openner">
         What We Do
-        <img src="/images/brand_dd.png" alt="Drop Down Arrow">
-      </a>
+        <img class="down_arrow" src="/images/down_arrow.png" alt="Drop Down Arrow">
+      </div>
 
       <ul class="brand_dd">
-        <li ng-repeat="brand in brands">
-          <a href="/brand" ng-click="pickBrand(brand)">
-            {{ Brand }}
+				<li>
+					<div id="brand-logo-container">
+						<p>
+							<a id="logo" href="/">
+								CMYK+WHITE
+							</a>
+						</p>
+					</div>
+				</li>
+
+				<li class="brand_names" ng-repeat="brand in brands">
+          <a ng-href="/brand/{{brand.class}}" ng-click="pickBrand(brand.name.toLowerCase() + '')">
+            {{ brand.name }}
           </a>
         </li>
+
+				<li class="brand_names">
+					<a href="/work">
+						Back to All Brands
+					</a>
+				</li>
+
+				<li>
+					<img src="/images/up_arrow.png" class="up_arrow" alt="">
+				</li>
       </ul>
     </li>
 
