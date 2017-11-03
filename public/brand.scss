@@ -1,6 +1,12 @@
 .brand_container {
   margin: 8.9vw 0 21vw;
 
+  .brand_name {
+    font-size: 3.9vw;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
   .brand_logo {
     display: block;
     margin: 0 auto;
@@ -37,7 +43,7 @@
   .brand_desc {
     font-size: 3.1vw;
     text-align: center;
-    margin: 5vw auto 0;
+    margin: 2.6vw auto 0;
     width: 90.6vw;
   }
 

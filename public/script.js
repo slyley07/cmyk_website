@@ -1,4 +1,4 @@
-var App = angular.module('CMYKApp', ['ngRoute', 'ngCookies', 'ngTouch']);
+var App = angular.module('CMYKApp', ['ngRoute', 'ngTouch']);
 
 //ROUTER------------------------------------------------------------------------
 App.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
