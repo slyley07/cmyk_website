@@ -14,6 +14,9 @@ app.use(urlencoded({
 
 app.use(express.static(__dirname + '/'));
 
+app.all('/*', function(req, res) {
+    res.sendfile('index.html');
+});
 
 var port = (process.env.PORT || 3000);
 app.listen(port, function(){
