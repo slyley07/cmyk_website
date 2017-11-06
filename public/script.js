@@ -1,4 +1,4 @@
-var App = angular.module('CMYKApp', ['ngRoute', 'ngTouch']);
+var App = angular.module('CMYKApp', ['ngRoute', 'ngCookies', 'ngTouch']);
 
 //ROUTER------------------------------------------------------------------------
 App.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -167,14 +167,14 @@ App.controller('brandController', function($scope, $route, $routeParams, $cookie
 
   console.log(param);
 
-  // $scope.brand = $cookies.get("brand");
+  $scope.brand = $cookies.get("brand");
 
-  // $scope.brand = $routeParams.param;
+  $scope.brand = $routeParams.param;
 
-  //
-  // $scope.pickBrand = function(uiBrand) {
-  //   $cookies.put("brand", uiBrand);
-  // }
+  
+  $scope.pickBrand = function(uiBrand) {
+    $cookies.put("brand", uiBrand);
+  }
 
   $http({
     method: 'GET',
