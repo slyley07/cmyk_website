@@ -42,14 +42,11 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 // create the controller and inject Angular's $scope
 //CONTROLLERS-------------------------------------------------------------------
 App.controller('mainController', function($scope) {
-  // create a message to display in our view
-  // $scope.message = 'Landing ... works? !';
   $(document).ready(function() {
     $(window).scrollTop(0);
     $(window).scroll(function() {
 
       if ($(this).scrollTop() > 2) {
-        // console.log('pre grey');
         $('.search_n_find .pre').css({
           color: '#202020'
         });
@@ -165,6 +162,7 @@ App.controller('workController', function($scope, $cookies) {
 });
 
 App.controller('brandController', function($scope, $route, $routeParams, $cookies, $http) {
+  $(window).scrollTop(0);
   var param = $routeParams.param;
 
   console.log(param);
