@@ -157,26 +157,16 @@ App.controller('aboutController', function($scope) {
   $('#hello-image').delay(3000).fadeOut(1000);
 });
 
-App.controller('workController', function($scope, $cookies) {
+App.controller('workController', function($scope) {
   $(window).scrollTop(0);
-  // $scope.pickBrand = function(uiBrand) {
-  //   $cookies.put("brand", uiBrand);
-  // }
 });
 
-App.controller('brandController', function($scope, $route, $routeParams, $cookies, $http) {
+App.controller('brandController', function($scope, $route, $routeParams, $http) {
   var param = $routeParams.param;
 
-  console.log(param);
-
-  // $scope.brand = $cookies.get("brand");
+  // console.log(param);
 
   // $scope.brand = $routeParams.param;
-
-  //
-  // $scope.pickBrand = function(uiBrand) {
-  //   $cookies.put("brand", uiBrand);
-  // }
 
   $http({
     method: 'GET',
