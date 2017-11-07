@@ -105,3 +105,9 @@ input, textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
 }
+
+@media screen and (max-width: 330px) {
+  div.right {
+    text-align: center;
+  }
+}
