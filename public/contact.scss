@@ -100,3 +100,8 @@ textarea {
   margin: 20px;
   font-size: 30px;
 }
+
+input, textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
