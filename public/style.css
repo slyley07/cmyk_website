@@ -62,7 +62,6 @@ a {
 
 .bold {
   font-size: 35px;
-  font-weight: 700;
   vertical-align: bottom; }
 
 #more {
@@ -195,9 +194,9 @@ p.job-title {
 
 .bold {
   font-size: 14.5vw;
-  font-weight: 700;
   vertical-align: bottom;
-  line-height: 1.1; }
+  line-height: 1.1; 
+  font-family: 'Playfair Display', serif;}
 
 .top-padding {
   padding-top: 40px; }
