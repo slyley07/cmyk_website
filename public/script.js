@@ -167,7 +167,7 @@ App.directive("bavi", function() {
     templateUrl: '/views/brand_navigation.html',
     link: function(scope) {
       $('.openner').click(function() { $('.brand_dd').slideDown() });
-      $('.up_arrow').click(function() { $('.brand_dd').slideUp() });
+      $('.slide_up').click(function() { $('.brand_dd').slideUp() });
     }
   };
 });
