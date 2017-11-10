@@ -1,0 +1,109 @@
+.brand_container {
+  margin: 8.9vw 0 21vw;
+
+  .brand_name {
+    font-size: 3.9vw;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .brand_logo {
+    display: block;
+    margin: 0 auto;
+
+    &.apa {
+      width: 30.6vw;
+    }
+
+    &.bobbi_brown {
+      width: 42.9vw;
+    }
+
+    &.estee_lauder {
+      width: 44vw;
+    }
+
+    &.flirt {
+      width: 19.3vw;
+    }
+
+    &.la_mer {
+      width: 30.1vw;
+    }
+
+    &.saturday_skin {
+      width: 20.6vw;
+    }
+
+    &.little_d {
+      width: 27.9vw;
+    }
+  }
+
+  .brand_desc {
+    font-size: 3.1vw;
+    text-align: center;
+    margin: 2.6vw auto 0;
+    width: 90.6vw;
+  }
+
+  .sections {
+    margin-top: 8.4vw;
+
+    #carousel {
+      font-size: 0;
+
+      .items {
+        height: 56.25vw;
+
+        .item {
+          display: none;
+
+          &.active {
+            display: block;
+          }
+        }
+      }
+
+      .indicators {
+        margin: 4vw 0;
+
+        ul {
+          text-align: right;
+          margin-right: 3vw;
+          font-size: 0;
+
+          li {
+            display: inline-block;
+            margin: 1vw;
+
+            .indicator {
+              width: 5.46vw;
+              height: 0.7vw;
+              background-color: #D2D0D2;
+
+              &.active {
+                background-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section_name,
+    .section_desc {
+      width: 90.6vw;
+      margin: 0 auto;
+    }
+
+    .section_name {
+      font-size: 3.75vw;
+      margin-bottom: 0.9vw;
+    }
+
+    .section_desc {
+      font-size: 2.5vw;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* Career */
+.job-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+p.job-title {
+  font-size: 5vw !important;
+  padding: 10px 0px;
+}
+
+div.job-requirements > p {
+  font-size: 12px !important;
+}
+
+hr#job-divider {
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 325px) {
+  #nav > li {
+    font-size: 11px;
+  }
+}

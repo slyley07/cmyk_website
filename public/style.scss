@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0.25em;
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0.25em;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 0.25em;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin: 0.25em;
+}
+
+h5, h6, p {
+  font-size: 1em;
+  margin: 0.25em;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  max-width: 960px;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+  color: #222;
+}
+
+#who-we-are-main {
+	background-color: black;
+	color: white;
+	padding-top: 15px;
+	height: 100vh;
+}
+
+.welcome-text {
+	width: 95%;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+#white {
+	color: white;
+}
+
+#rotate {
+	height: 125px;
+}
+
+#blurb {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-size: 35px;
+	font-weight: 700;
+	vertical-align: bottom;
+}
+
+#more {
+	text-align: center;
+	font-size: 8px;
+}
+
+#scroll {
+	font-size: 8px;
+	text-align: center;
+}
+
+/* nav -- feel free to remove / modify styling for navigation */
+nav {
+  text-align: center;
+  background-color: white;
+}
+nav > ul {
+	padding: 0px;
+  margin: 0px;
+}
+
+#nav > li {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  flex: 1;
+}
+
+#logo-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+#logo {
+  color: white;
+  font-size: 24px;
+}
+
+/* Landing */
+// .container {
+//   width: 100%;
+//   height: 2000px;
+//   background-color: black;
+// }
+//
+// .search_n_find {
+//   width: 540px;
+//   padding: 5px;
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+//
+// pre {
+//   font-size: 46px;
+//   color: #FFFFFF;
+//   white-space: pre-line;
+// }
+
+
+/* Career */
+p.job-title {
+  font-size: 24px;
+  padding: 20px 0px;
+}
+
+
+@import "./landing.scss";
+@import "./about.scss";
+@import "./work.scss";
+@import "./brand_nav.scss";
+@import "./brand.scss";
+@import "./career.scss";
+@import "./contact.scss";

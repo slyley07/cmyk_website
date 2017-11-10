@@ -1,0 +1,59 @@
+<navi></navi>
+<div class="contact-container">
+	<p class="menu-font contact-title"> CONTACT US</p>
+	<div class="contact-info">
+		<div class="left">
+			49 W 38th St. 4th Floor <br>
+			New York NY, 10018
+		</div>
+		<div class="right">
+			T 212.302.1460<br>
+			F 212.302.1497
+		</div>
+	</div>
+
+	<div>
+		<form class="contact-form" ng-submit="contactUs(user)">
+			<input type="text" ng-model="user.name" placeholder="Name" name="name" > <br>
+			<input type="email" ng-model="user.email" placeholder="Email" name="email"> <br>
+			<input type="text" ng-model="user.telephone" placeholder="Telephone" name="telephone"> <br>
+			<textarea placeholder="Message" ng-model="user.message" name="content">
+			</textarea> <br>
+			<input id="submit-btn" type="submit" name="SUBMIT">
+		</form>
+	</div>
+</div>
+<div class="map">
+	<div id="map"></div>
+</div>
+<footer></footer>
+
+<div id="modal">
+	<div id="thank-you">
+		<div id="clear-this">
+			<button id="close">X</button>
+		</div>
+		
+		<p style="font-size: 24px;">
+			Thank you for<br/> submitting!
+		</p>
+		<p style="font-size: 12px;">Loren ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function initMap() {
+        var cmyk = {lat: 40.752097, lng: -73.984907};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: cmyk
+        });
+        var marker = new google.maps.Marker({
+          position: cmyk,
+          map: map
+        });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCW7lgWl3UVRvb3F-kzvferGZ03SXvZgdg&callback=initMap">
+</script>

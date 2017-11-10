@@ -1,0 +1,18 @@
+<div id="carousel">
+  <ul class="items">
+    <li class="item" ng-repeat="link in links track by $index">
+      <img ng-swipe-right="changeItem($index - 1, 'right', indy)"
+      ng-swipe-left="changeItem($index + 1, 'left', indy)"
+      ng-src="{{link.src}}" />
+    </li>
+  </ul>
+
+  <div class="indicators">
+    <ul>
+      <li ng-repeat="link in links track by $index">
+        <div ng-click="changeItem($index, links, indy)" class="indicator">
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

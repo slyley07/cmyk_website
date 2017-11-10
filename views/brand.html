@@ -1,0 +1,32 @@
+<bavi></bavi>
+
+<div class="brand_container">
+  <!-- <img ng-src="{{brandData.logo}}" class="{{brandData.class}} brand_logo" alt=""> -->
+
+  <h1 class="brand_name">
+    {{brandData.name}}
+  </h1>
+
+  <p class="brand_desc">
+    {{brandData.desc}}
+  </p>
+
+  <div class="sections" ng-repeat="section in brandData.sections">
+
+    <div ng-if="section.secType === 'carousel'">
+      <carousel id="cara-{{$index}}" indy="$index" links="section.secImages"></carousel>
+    </div>
+
+    <h4 class="section_name">
+      {{section.secName}}
+    </h4>
+
+    <p class="section_desc">
+      {{section.secDesc}}
+    </p>
+  </div>
+</div>
+
+
+
+<footer></footer>

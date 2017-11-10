@@ -1,0 +1,46 @@
+#brand-logo-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+
+  #logo {
+    color: #000000;
+    font-size: 24px;
+  }
+}
+
+.down_arrow,
+.up_arrow {
+  width: 4.6vw;
+  height: 2.5vw;
+}
+
+.brand_dd {
+  padding: 0 4.6vw;
+  list-style: none;
+  display: none;
+  position: fixed;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 6.25vw;
+
+  .brand_names {
+    padding: 3.5vw 0;
+    border-bottom: 1px solid #979797;
+    text-transform: uppercase;
+    text-align: left;
+
+    a {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .up_arrow {
+    text-align: center;
+  }
+}
