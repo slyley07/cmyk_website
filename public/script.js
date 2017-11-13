@@ -258,6 +258,25 @@ App.directive("landing", function() {
   };
 });
 
+App.directive("parallax", function() {
+  return {
+    restrict: 'A',
+    link: function(scope) {
+      $('document').ready(function() {
+        function parallax(page, speed, top) {
+          var scrolled = $(window).scrollTop();
+          $('.' + page).css('top', (scrolled * speed) + top + 'px');
+        }
+
+        $(window).scroll(function(e) {
+          parallax('apa_1', 0.5, 695);
+          parallax('apa_2', 0.3, 1050);
+        });
+      });
+    }
+  }
+})
+
 App.directive("footer", function() {
   return {
     restrict : "E",
