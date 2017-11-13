@@ -92,13 +92,10 @@ nav > ul {
 
 #logo-container {
   width: 100%;
-  padding: 20px;
   text-align: center;
-  background-color: black; }
-
-#logo {
-  color: white;
-  font-size: 24px; }
+  background-color: black;
+  height: 23vw;
+  padding: 7.9vw; }
 
 /* Landing */
 /* Career */
@@ -370,15 +367,6 @@ p.job-title {
     .work-container .little_d .ld_2 {
       grid-column: 1 / 4;
       margin-top: 5vw; }
-
-#brand-logo-container {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: #FFFFFF; }
-  #brand-logo-container #logo {
-    color: #000000;
-    font-size: 24px; }
 
 .brand_page_logo {
   width: 37vw; }
