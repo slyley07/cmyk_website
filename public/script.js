@@ -88,9 +88,21 @@ App.controller('aboutController', function($scope) {
   $('#hello-image').delay(3000).fadeOut(1000);
 
   // Desktop Team Testing
-  $('#eunsun').click(domorewithless)
+  $('#allison').click(domorewithless);
+  $('#bomee').click(domorewithless);
+  $('#bradley').click(domorewithless);
+  $('#chris').click(domorewithless);
+  $('#christine').click(domorewithless);
+  $('#eunsun').click(domorewithless);
+  $('#gino').click(domorewithless);
+  $('#katerina').click(domorewithless);
+  $('#nak').click(domorewithless);
+  $('#natalia').click(domorewithless);
+  $('#paula').click(domorewithless);
+  $('#robin').click(domorewithless);
+  $('#sanders').click(domorewithless);
   $('#sean').click(domorewithless);
-  
+  $('#yongsin').click(domorewithless);
 
   function domorewithless() {
     var text = $(this).text();
@@ -100,7 +112,6 @@ App.controller('aboutController', function($scope) {
     $('#group-pic').attr('src', imgurl);
     $(this).addClass('active');
   }
-
 
 });
 
