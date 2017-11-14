@@ -86,6 +86,22 @@ App.controller('aboutController', function($scope) {
 
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   $('#hello-image').delay(3000).fadeOut(1000);
+
+  // Desktop Team Testing
+  $('#eunsun').click(domorewithless)
+  $('#sean').click(domorewithless);
+  
+
+  function domorewithless() {
+    var text = $(this).text();
+    console.log("text: ", text)
+    var imgurl = './images/group-' + text + '.png'
+    $('.name-tag').removeClass('active');
+    $('#group-pic').attr('src', imgurl);
+    $(this).addClass('active');
+  }
+
+
 });
 
 App.controller('workController', function($scope) {

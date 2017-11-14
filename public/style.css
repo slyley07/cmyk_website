@@ -270,6 +270,40 @@ p.job-title {
 .ig-icon > img {
   width: 40px; }
 
+#mobile-team {
+  display: none;}
+
+#desktop-team {
+  display: block;}
+
+
+.name-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.name-container > div > p {
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.active {
+  font-weight: 900;
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-team {
+    display: block;}
+
+  #desktop-team {
+    display: none;}
+}
+
+
 .work-container {
   margin-top: 6.7vw; }
   .work-container h4 {
