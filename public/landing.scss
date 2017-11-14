@@ -4,6 +4,8 @@
   height: 1400px;
   background-color: black;
 
+
+
   .search_n_find {
     width: 100vw;
     // height: 100vh;
@@ -13,18 +15,46 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #FFFFFF;
 
     // pre {
     .pre {
-      width: 75vw;
+      width: 93vw;
       margin: 0 auto;
       font-size: 6.47vw;
       // font-family: 'Source Code Pro', monospace;
       font-family: 'Roboto Mono', monospace;
       font-weight: 100;
       // font-weight: 200;
-      color: #FFFFFF;
       // white-space: pre-line;
+
+      div {
+        letter-spacing: 1vw;
+        margin-bottom: 1vw;
+      }
+
+
+    }
+  }
+
+  .scroll {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    p {
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 3.3vw;
+    }
+
+    img {
+      width: 4.6vw;
+      height: 2.5vw;
+      margin: 3vw auto;
+      display: block;
     }
   }
 }
@@ -65,4 +95,17 @@
       border-top: none;
     }
   }
+}
+
+.grey {
+  color: #202020;
+}
+
+.light-grey {
+  color: #3E3D3E
+}
+
+.white {
+  color: #FFFFFF;
+  transition: color 2s;
 }

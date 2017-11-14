@@ -1,4 +1,4 @@
-var App = angular.module('CMYKApp', ['ngRoute']);
+var App = angular.module('CMYKApp', ['ngRoute', 'ngTouch']);
 
 //ROUTER------------------------------------------------------------------------
 App.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -33,7 +33,8 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   }).otherwise({ redirectTo: '/'});
 
   $locationProvider.html5Mode({
-    enabled: true
+    enabled: true,
+    requireBase: false
   });
 }]);
 
@@ -41,72 +42,6 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 // create the controller and inject Angular's $scope
 //CONTROLLERS-------------------------------------------------------------------
 App.controller('mainController', function($scope) {
-  $(document).ready(function() {
-    $(window).scrollTop(0);
-    $(window).scroll(function() {
-
-      if ($(this).scrollTop() > 2) {
-        $('.search_n_find .pre').css({
-          color: '#202020'
-        });
-      } else {
-        console.log('pre white');
-        $('.search_n_find .pre').css({
-          color: '#FFFFFF !important'
-        });
-      }
-
-      var scrollingMagic = function (className, scroll, scroll2) {
-        if ($(window).scrollTop() > scroll && $(window).scrollTop() < 500) {
-          $(className).css({
-            color: '#FFFFFF'
-          });
-        } else if ($(window).scrollTop() > 500) {
-          $(className).css({
-            color: '#3E3D3E'
-          });
-        } else {
-          $(className).css({
-            color: '#202020'
-          });
-        }
-
-        if (className === ".search_c" || className === ".search_m" || className === ".search_y" || className === ".search_k") {
-          if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 499) {
-            $(className).css({
-              color: '#FFFFFF'
-            });
-          }
-        }
-
-        if ($(window).scrollTop() < 2) {
-          $(className).css({
-            color: '#FFFFFF'
-          });
-        }
-
-        if ($(window).scrollTop() < 2) {
-          $('.pre').css({
-            color: '#FFFFFF'
-          });
-        }
-      }
-
-      scrollingMagic('.search_brand', 50);
-      scrollingMagic('.search_create', 100);
-      scrollingMagic('.search_unique', 150);
-      scrollingMagic('.search_make', 200);
-      scrollingMagic('.search_passion', 250);
-      scrollingMagic('.search_style', 300);
-      scrollingMagic('.search_design', 350);
-      scrollingMagic('.search_think', 400);
-      scrollingMagic('.search_solution', 450);
-      scrollingMagic('.search_c', 500, 100);
-      scrollingMagic('.search_m', 550, 200);
-      scrollingMagic('.search_y', 600, 300);
-      scrollingMagic('.search_k', 650, 400);
-    });
-  });
 });
 
 App.controller('aboutController', function($scope) {
@@ -158,9 +93,11 @@ App.controller('workController', function($scope) {
 });
 
 App.controller('brandController', function($scope, $route, $routeParams, $http) {
-  $(window).scrollTop(0);
   var param = $routeParams.param;
-  $scope.brand = $routeParams.param;
+
+  // console.log(param);
+
+  // $scope.brand = $routeParams.param;
 
   $http({
     method: 'GET',
@@ -230,10 +167,115 @@ App.directive("bavi", function() {
     templateUrl: '/views/brand_navigation.html',
     link: function(scope) {
       $('.openner').click(function() { $('.brand_dd').slideDown() });
-      $('.up_arrow').click(function() { $('.brand_dd').slideUp() });
+      $('.slide_up').click(function() { $('.brand_dd').slideUp() });
     }
   };
 });
+
+App.directive("landing", function() {
+  return {
+    restrict: 'A',
+    link: function(scope) {
+      console.log('bound');
+
+      $(document).ready(function() {
+        $(window).scrollTop(0);
+        $(window).scroll(function() {
+
+          if ($(this).scrollTop() > 2) {
+            // console.log('pre grey');
+            $('.search_n_find .pre').css({
+              color: '#202020',
+              transition: 'color 2s'
+            });
+          } else {
+            console.log('pre white');
+            $('.search_n_find .pre').css({
+              color: '#FFFFFF !important',
+              transition: 'color 2s'
+            });
+          }
+
+          var scrollingMagic = function (className, scroll, scroll2) {
+            if ($(window).scrollTop() > scroll && $(window).scrollTop() < 500) {
+              $(className).css({
+                color: '#FFFFFF',
+                transition: 'color 2s'
+              });
+            } else if ($(window).scrollTop() > 500) {
+              $(className).css({
+                color: '#3E3D3E',
+                transition: 'color 2s'
+              });
+
+            } else {
+              $(className).css({
+                color: '#202020',
+                transition: 'color 2s'
+              });
+            }
+
+            if (className === ".search_c" || className === ".search_m" || className === ".search_y" || className === ".search_k") {
+              if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 499) {
+                $(className).css({
+                  color: '#FFFFFF',
+                  transition: 'color 2s'
+                });
+              }
+            }
+
+            if ($(window).scrollTop() < 2) {
+              $(className).css({
+                color: '#FFFFFF',
+                transition: 'color 2s'
+              });
+            }
+
+            if ($(window).scrollTop() < 2) {
+              $('.pre').css({
+                color: '#FFFFFF',
+                transition: 'color 2s'
+              });
+            }
+          }
+
+          scrollingMagic('.search_brand', 50);
+          scrollingMagic('.search_create', 100);
+          scrollingMagic('.search_unique', 150);
+          scrollingMagic('.search_make', 200);
+          scrollingMagic('.search_passion', 250);
+          scrollingMagic('.search_style', 300);
+          scrollingMagic('.search_design', 350);
+          scrollingMagic('.search_think', 400);
+          scrollingMagic('.search_solution', 450);
+          scrollingMagic('.search_c', 500, 100);
+          scrollingMagic('.search_m', 550, 200);
+          scrollingMagic('.search_y', 600, 300);
+          scrollingMagic('.search_k', 650, 400);
+        });
+      });
+    }
+  };
+});
+
+App.directive("parallax", function() {
+  return {
+    restrict: 'A',
+    link: function(scope) {
+      $('document').ready(function() {
+        function parallax(page, speed, top) {
+          var scrolled = $(window).scrollTop();
+          $('.' + page).css('top', (scrolled * speed) + top + 'px');
+        }
+
+        $(window).scroll(function(e) {
+          parallax('apa_1', 0.5, 695);
+          parallax('apa_2', 0.3, 1050);
+        });
+      });
+    }
+  }
+})
 
 App.directive("footer", function() {
   return {

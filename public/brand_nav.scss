@@ -1,13 +1,17 @@
-#brand-logo-container {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: #FFFFFF;
+// #brand-logo-container {
+//   width: 100%;
+//   padding: 20px;
+//   text-align: center;
+//   background-color: #FFFFFF;
+//
+//   #logo {
+//     color: #000000;
+//     font-size: 24px;
+//   }
+// }
 
-  #logo {
-    color: #000000;
-    font-size: 24px;
-  }
+.brand_page_logo {
+  width: 37vw;
 }
 
 .down_arrow,
@@ -15,6 +19,12 @@
   width: 4.6vw;
   height: 2.5vw;
 }
+
+.down_arrow {
+  display: block;
+  margin: 2px auto;
+}
+
 
 .brand_dd {
   padding: 0 4.6vw;
