@@ -48,7 +48,7 @@ a {
 
 .welcome-text {
   width: 95%;
-  max-width: 720px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 #white {
@@ -187,7 +187,6 @@ p.job-title {
 
 #who-we-are-container {
   position: relative;
-  width: 100vw;
   margin: 0 auto;
   padding-top: 15px;
   background-color: black; }
@@ -270,6 +269,41 @@ p.job-title {
 
 .ig-icon > img {
   width: 40px; }
+
+#mobile-team {
+  display: none;}
+
+#desktop-team {
+  display: block;}
+
+
+.name-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.name-container > div > p {
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+.active {
+  font-weight: 900;
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-team {
+    display: block;}
+
+  #desktop-team {
+    display: none;}
+}
+
 
 .work-container {
   margin-top: 6.7vw; }
