@@ -42,6 +42,13 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 // create the controller and inject Angular's $scope
 //CONTROLLERS-------------------------------------------------------------------
 App.controller('mainController', function($scope) {
+
+  $('.nav-link').click(addActiveClass)
+
+  function addActiveClass() {
+    $('.nav-link').removeClass('active-nav');
+    $(this).addClass('active-nav');
+  }
 });
 
 App.controller('aboutController', function($scope) {

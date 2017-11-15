@@ -90,6 +90,14 @@ nav > ul {
   padding-bottom: 5px;
   flex: 1; }
 
+.nav-link {
+  color: #9B9B9B;
+}
+
+.active-nav {
+  color: black;
+}
+
 #logo-container {
   width: 100%;
   text-align: center;
