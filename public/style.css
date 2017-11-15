@@ -48,7 +48,7 @@ a {
 
 .welcome-text {
   width: 95%;
-  max-width: 1200px;
+  max-width: 720px;
   margin: 0 auto; }
 
 #white {
@@ -117,7 +117,7 @@ p.job-title {
     transform: translate(-50%, -50%);
     color: #FFFFFF; }
     .container .search_n_find .pre {
-      width: 90vw;
+      width: 90%;
       margin: 0 auto;
       font-size: 6.17vw;
       font-family: 'Roboto Mono', monospace;
@@ -271,40 +271,32 @@ p.job-title {
   width: 40px; }
 
 #mobile-team {
-  display: none;}
+  display: none; }
 
 #desktop-team {
-  display: block;}
-
+  display: block; }
 
 .name-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-}
-
+  justify-content: space-around; }
 
 .name-container > div > p {
   text-transform: uppercase;
-  padding: 5px 10px;
-}
+  padding: 5px 10px; }
 
 .active {
   font-weight: 900;
-  color: red;
-}
+  color: red; }
 
 @media screen and (max-width: 768px) {
   #mobile-team {
-    display: block;}
+    display: block; }
 
   #desktop-team {
-    display: none;}
-}
-
-
+    display: none; } }
 .work-container {
   margin-top: 6.7vw; }
   .work-container h4 {
