@@ -106,8 +106,26 @@ input, textarea {
   -webkit-border-radius: 0;
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (min-width: 330px) {
   div.right {
     text-align: center;
   }
+}
+
+
+@media screen and (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #contact-desktop-left, #contact-desktop-right {
+    flex: 1;
+    padding: 10px;
+  }
+
+  textarea {height: 170px;}
+  .map, #map {height: 405px;}
+}
+
 }
