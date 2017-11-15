@@ -1,31 +1,35 @@
 <navi></navi>
 <div class="contact-container">
-	<p class="menu-font contact-title"> CONTACT US</p>
-	<div class="contact-info">
-		<div class="left">
-			49 W 38th St. 4th Floor <br>
-			New York NY, 10018
+	<div id="contact-desktop-left">
+		<p class="menu-font contact-title"> CONTACT US</p>
+		<div class="contact-info">
+			<div class="left">
+				49 W 38th St. 4th Floor <br>
+				New York NY, 10018
+			</div>
+			<div class="right">
+				T 212.302.1460<br>
+				F 212.302.1497
+			</div>
 		</div>
-		<div class="right">
-			T 212.302.1460<br>
-			F 212.302.1497
-		</div>
-	</div>
 
-	<div>
-		<form class="contact-form" ng-submit="contactUs(user)">
-			<input type="text" ng-model="user.name" placeholder="Name" name="name" > <br>
-			<input type="email" ng-model="user.email" placeholder="Email" name="email"> <br>
-			<input type="text" ng-model="user.telephone" placeholder="Telephone" name="telephone"> <br>
-			<textarea placeholder="Message" ng-model="user.message" name="content">
-			</textarea> <br>
-			<input id="submit-btn" type="submit" name="SUBMIT">
-		</form>
+		<div>
+			<form class="contact-form" ng-submit="contactUs(user)">
+				<input type="text" ng-model="user.name" placeholder="Name" name="name" > <br>
+				<input type="email" ng-model="user.email" placeholder="Email" name="email"> <br>
+				<input type="text" ng-model="user.telephone" placeholder="Telephone" name="telephone"> <br>
+				<textarea placeholder="Message" ng-model="user.message" name="content">
+				</textarea> <br>
+				<input id="submit-btn" type="submit" name="SUBMIT">
+			</form>
+		</div>
+	</div>
+	
+	<div class="map" id="contact-desktop-right">
+		<div id="map"></div>
 	</div>
 </div>
-<div class="map">
-	<div id="map"></div>
-</div>
+
 <footer></footer>
 
 <div id="modal">
@@ -208,6 +212,8 @@
 		]
 
         var cmyk = {lat: 40.752097, lng: -73.984907};
+        var cmykInfoWindow = new google.maps.InfoWindow();
+        var content = '<img src="./images/cmyk_landing_logo.png" >';
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: cmyk,
@@ -219,6 +225,23 @@
           position: cmyk,
           map: map
         });
+
+        marker.addListener('click', function(){
+        	populateWindow(this, cmykInfoWindow);
+        });
+
+        function populateWindow (marker, infowindow) {
+        	if (infowindow.marker != marker) {
+				infowindow.makrer = marker;
+				infowindow.setContent('<div>' + content + '</div>');
+				infowindow.open(map, marker);
+
+				// Clear marker when infowindow is closed.
+				infowindow.addListener('click', function(){
+					infowindow.setMarker(null);
+				});
+			}
+        }
     }
 
 
