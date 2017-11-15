@@ -87,24 +87,11 @@ App.controller('aboutController', function($scope) {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   $('#hello-image').delay(3000).fadeOut(1000);
 
-  // Desktop Team Testing - will refactor 
-  $('#allison').click(domorewithless);
-  $('#bomee').click(domorewithless);
-  $('#bradley').click(domorewithless);
-  $('#chris').click(domorewithless);
-  $('#christine').click(domorewithless);
-  $('#eunsun').click(domorewithless);
-  $('#gino').click(domorewithless);
-  $('#katerina').click(domorewithless);
-  $('#nak').click(domorewithless);
-  $('#natalia').click(domorewithless);
-  $('#paula').click(domorewithless);
-  $('#robin').click(domorewithless);
-  $('#sanders').click(domorewithless);
-  $('#sean').click(domorewithless);
-  $('#yongsin').click(domorewithless);
 
-  function domorewithless() {
+// Team picture 
+  $('.name-tag').click(highlightPerson);
+
+  function highlightPerson() {
     var text = $(this).text();
     var imgurl = './images/group-' + text + '.png'
     $('.name-tag').removeClass('active');
@@ -114,21 +101,17 @@ App.controller('aboutController', function($scope) {
       $('#group-pic').attr('src', imgurl);
     }).fadeIn(700);
 
-    // Using fadeTo
-    // $('#group-pic').fadeTo(1000, 0.35, function(){
-    //   $('#group-pic').attr('src', imgurl);
-    // }).fadeTo(1000, 1);
-
     $(this).addClass('active');
   }
 
-  // Clear the
+  // Clear the selection 
   $(document).click(function(){
     if(!$(event.target).is('.name-tag')) {
       $('.name-tag').removeClass('active');
-      $('#group-pic').fadeOut(300, function(){
-        $('#group-pic').attr('src', './images/group-photo.png');
-      }).fadeIn(800);
+       $('#group-pic').attr('src', './images/group-photo.png');
+      // $('#group-pic').fadeOut(100, function(){
+      //   $('#group-pic').attr('src', './images/group-photo.png');
+      // }).fadeIn(100);
     }
   })
   
