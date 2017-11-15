@@ -1,12 +1,19 @@
 <div id="logo-container">
-	<p><a id="logo" href="/">			<img src="/images/cmyk_logo_w.png" alt="CMYK+WHITE" class="brand_page_logo">
+	<p><a id="logo" href="/"><img src="/images/cmyk_logo_w.png" alt="CMYK+WHITE" class="brand_page_logo">
 </a></p>
 </div>
 <nav>
 	<ul id="nav" class="flex-container">
-		<li><a class="nav-link" href="/about">Who We Are</a></li>
-		<li><a class="nav-link" href="/work">What We Do</a></li>
+		<li><a class="nav-link" href="/about" ng-class="{selected: isActive('about')}">Who We Are</a></li>
+		<li><a class="nav-link" href="/work" ng-class="{selected: isActive1('work')}" >What We Do</a></li>
 		<li><a class="nav-link" href="https://www.designplusshop.com/">Design + Shop</a></li>
-		<li><a class="nav-link" href="/contact">Contact Us</a></li>
+		<li><a class="nav-link" href="/contact" ng-class="{selected: isActive2('contact')}">Contact Us</a></li>
 	</ul>
+
+	<!-- <ul id="nav" class="flex-container">
+		<li><a class="nav-link" href="/about" ng-class="{selected: isActive(about)}">Who We Are</a></li>
+		<li><a class="nav-link" href="/work" ng-class="{selected: isActive(work)}">What We Do</a></li>
+		<li><a class="nav-link" href="https://www.designplusshop.com/">Design + Shop</a></li>
+		<li><a class="nav-link" href="/contact" ng-class="{selected: isActive(contact)}">Contact Us</a></li>
+	</ul> -->
 </nav>

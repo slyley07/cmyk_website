@@ -98,6 +98,14 @@ nav > ul {
   color: black;
 }
 
+.selected {
+  color: black !important;
+}
+
+.test-nav {
+  background-color: red;
+}
+
 #logo-container {
   width: 100%;
   text-align: center;
