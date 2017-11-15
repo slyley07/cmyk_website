@@ -87,7 +87,7 @@ App.controller('aboutController', function($scope) {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   $('#hello-image').delay(3000).fadeOut(1000);
 
-  // Desktop Team Testing
+  // Desktop Team Testing - will refactor 
   $('#allison').click(domorewithless);
   $('#bomee').click(domorewithless);
   $('#bradley').click(domorewithless);
@@ -106,13 +106,32 @@ App.controller('aboutController', function($scope) {
 
   function domorewithless() {
     var text = $(this).text();
-    console.log("text: ", text)
     var imgurl = './images/group-' + text + '.png'
     $('.name-tag').removeClass('active');
-    $('#group-pic').attr('src', imgurl);
+
+    // Using fadeIn and Out
+    $('#group-pic').fadeOut(300, function(){
+      $('#group-pic').attr('src', imgurl);
+    }).fadeIn(700);
+
+    // Using fadeTo
+    // $('#group-pic').fadeTo(1000, 0.35, function(){
+    //   $('#group-pic').attr('src', imgurl);
+    // }).fadeTo(1000, 1);
+
     $(this).addClass('active');
   }
 
+  // Clear the
+  $(document).click(function(){
+    if(!$(event.target).is('.name-tag')) {
+      $('.name-tag').removeClass('active');
+      $('#group-pic').fadeOut(300, function(){
+        $('#group-pic').attr('src', './images/group-photo.png');
+      }).fadeIn(800);
+    }
+  })
+  
 });
 
 App.controller('workController', function($scope) {
