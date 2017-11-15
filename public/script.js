@@ -45,7 +45,6 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 //CONTROLLERS-------------------------------------------------------------------
 App.controller('globalController', function($scope, $window, $location) {
   var currentUrl = $window.location.href;
-  console.log("currentUrl: ", currentUrl);
 })
 
 App.controller('mainController', function($scope) {
@@ -93,7 +92,7 @@ App.controller('aboutController', function($scope) {
   })(jQuery);
 
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
-  $('#hello-image').delay(3000).fadeOut(1000);
+  $('#hello-image').delay(2400).fadeOut(800);
 
 
 // Team picture

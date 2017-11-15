@@ -46,6 +46,7 @@ textarea {
   padding: 10px 0;
   border: none;
   border-bottom: 1px solid gray;
+  height: 100px;
 }
 
 #submit-btn {
@@ -57,6 +58,8 @@ textarea {
   border: none;
   padding: 10px 0;
   background-color: white;
+  text-align: right;
+  padding-right: 3px;
 }
 
 .map {
