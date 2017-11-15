@@ -88,7 +88,7 @@ App.controller('aboutController', function($scope) {
   $('#hello-image').delay(3000).fadeOut(1000);
 
 
-// Team picture 
+// Team picture
   $('.name-tag').click(highlightPerson);
 
   function highlightPerson() {
@@ -104,7 +104,7 @@ App.controller('aboutController', function($scope) {
     $(this).addClass('active');
   }
 
-  // Clear the selection 
+  // Clear the selection
   $(document).click(function(){
     if(!$(event.target).is('.name-tag')) {
       $('.name-tag').removeClass('active');
@@ -114,7 +114,7 @@ App.controller('aboutController', function($scope) {
       // }).fadeIn(100);
     }
   })
-  
+
 });
 
 App.controller('workController', function($scope) {
@@ -279,7 +279,6 @@ App.directive("landing", function() {
           scrollingMagic('.search_m', 550, 200);
           scrollingMagic('.search_y', 600, 300);
           scrollingMagic('.search_k', 650, 400);
-          // scrollingMagic('.search_k', 650, 600);
         });
       });
     }

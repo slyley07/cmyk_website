@@ -1,6 +1,8 @@
 <div id="logo-container">
 	<p class="slide_up">
-		<img src="/images/cmyk_logo_w.png" alt="CMYK+WHITE" class="brand_page_logo">
+		<a href="/">
+			<img src="/images/cmyk_logo_w.png" alt="CMYK+WHITE" class="brand_page_logo">
+		</a>
 	</p>
 </div>
 
@@ -28,13 +30,13 @@
 				<li>
 					<div id="brand-logo-container">
 						<p id="logo" class="slide_up">
-							<img src="./images/cmyk_landing_logo.png" alt="CMYK+WHITE" class="landing_logo">
+							<img src="./images/cmyk_landing_logo.png" alt="CMYK+WHITE" class="brand_page_logo">
 						</p>
 					</div>
 				</li>
 
 				<li class="brand_names" ng-repeat="brand in brands">
-          <a ng-href="/brand/{{brand.class}}" ng-click="pickBrand(brand.name.toLowerCase() + '')">
+          <a ng-href="/brand/{{brand.class}}">
             {{ brand.name }}
           </a>
         </li>
