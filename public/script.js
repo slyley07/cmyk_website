@@ -176,8 +176,6 @@ App.directive("landing", function() {
   return {
     restrict: 'A',
     link: function(scope) {
-      console.log('bound');
-
       $(document).ready(function() {
         $(window).scrollTop(0);
         $(window).scroll(function() {
@@ -252,6 +250,7 @@ App.directive("landing", function() {
           scrollingMagic('.search_m', 550, 200);
           scrollingMagic('.search_y', 600, 300);
           scrollingMagic('.search_k', 650, 400);
+          // scrollingMagic('.search_k', 650, 600);
         });
       });
     }
