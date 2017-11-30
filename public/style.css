@@ -117,14 +117,9 @@ p.job-title {
     transform: translate(-50%, -50%);
     color: #FFFFFF; }
     .container .search_n_find .pre {
-      width: 90%;
       margin: 0 auto;
-      font-size: 6.09vw;
       font-family: 'Roboto Mono', monospace;
       font-weight: 100; }
-      .container .search_n_find .pre div {
-        letter-spacing: 1vw;
-        margin-bottom: 1vw; }
   .container .scroll {
     position: fixed;
     bottom: 5px;
@@ -132,13 +127,8 @@ p.job-title {
     transform: translateX(-50%); }
     .container .scroll p {
       color: #FFFFFF;
-      text-transform: uppercase;
-      margin: 0;
-      font-size: 3.3vw; }
+      text-transform: uppercase; }
     .container .scroll img {
-      width: 4.6vw;
-      height: 2.5vw;
-      margin: 1vw auto 3vw;
       display: block; }
 
 .landing_nav {
@@ -148,21 +138,16 @@ p.job-title {
   z-index: 2;
   position: relative; }
   .landing_nav .landing_logo {
-    width: 37vw;
     margin: 0 auto;
-    display: block;
-    padding: 5.3vh 0; }
+    display: block; }
   .landing_nav .landing_ul {
     background-color: #000000;
     height: 79vh;
     text-align: center; }
-    .landing_nav .landing_ul li {
-      padding: 6.5vh 0; }
-      .landing_nav .landing_ul li a {
-        color: #FFFFFF;
-        font-size: 9vw;
-        font-family: "Didact Gothic", "Roboto Sans", sans-serif;
-        text-transform: uppercase; }
+    .landing_nav .landing_ul li a {
+      color: #FFFFFF;
+      font-family: "Didact Gothic", "Roboto Sans", sans-serif;
+      text-transform: uppercase; }
     .landing_nav .landing_ul hr {
       width: 90vw;
       margin: 0 auto;
@@ -178,6 +163,57 @@ p.job-title {
   color: #FFFFFF;
   transition: color 2s; }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container .pre {
+    width: 90%;
+    font-size: 6.09vw; }
+    .container .pre .mobile {
+      display: inline; }
+    .container .pre .tablet {
+      display: none; }
+    .container .pre div {
+      letter-spacing: 1vw;
+      margin-bottom: 1vw; }
+  .container .scroll p {
+    font-size: 3.3vw; }
+  .container .scroll img {
+    width: 4.6vw;
+    margin: 1vw auto 3vw; }
+
+  .landing_nav .landing_logo {
+    width: 37vw;
+    padding: 5.3vh 0; }
+  .landing_nav .landing_ul li {
+    padding: 6.5vh 0; }
+    .landing_nav .landing_ul li a {
+      font-size: 9vw; } }
+@media screen and (min-width: 768px) {
+  .container .pre {
+    width: 95%;
+    font-size: 4.17vw; }
+    .container .pre .mobile {
+      display: none; }
+    .container .pre .tablet {
+      display: inline; }
+      .container .pre .tablet.marginator {
+        display: block;
+        margin-bottom: 1vw; }
+    .container .pre div {
+      letter-spacing: 1vw;
+      margin-bottom: 1vw; }
+  .container .scroll p {
+    font-size: 1.8vw; }
+  .container .scroll img {
+    width: 2.6vw;
+    margin: 1vw auto 3vw; }
+
+  .landing_nav .landing_logo {
+    width: 37vw;
+    padding: 4.3vh 0; }
+  .landing_nav .landing_ul li {
+    padding: 4.5vh 0; }
+    .landing_nav .landing_ul li a {
+      font-size: 7vw; } }
 /*------------ Who We Are (/About) -------------- */
 .about-container {
   width: 100%;
