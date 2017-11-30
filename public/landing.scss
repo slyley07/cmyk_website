@@ -1,10 +1,9 @@
 /* Landing */
 .container {
   width: 100%;
-  height: 1400px;
+  // height: 1400px;
+  height: 1700px;
   background-color: black;
-
-
 
   .search_n_find {
     width: 100vw;
@@ -17,23 +16,11 @@
     transform: translate(-50%, -50%);
     color: #FFFFFF;
 
-    // pre {
     .pre {
-      width: 93vw;
       margin: 0 auto;
-      font-size: 6.47vw;
-      // font-family: 'Source Code Pro', monospace;
+      // font-size: 6.47vw;
       font-family: 'Roboto Mono', monospace;
       font-weight: 100;
-      // font-weight: 200;
-      // white-space: pre-line;
-
-      div {
-        letter-spacing: 1vw;
-        margin-bottom: 1vw;
-      }
-
-
     }
   }
 
@@ -46,14 +33,9 @@
     p {
       color: #FFFFFF;
       text-transform: uppercase;
-      margin: 0;
-      font-size: 3.3vw;
     }
 
     img {
-      width: 4.6vw;
-      height: 2.5vw;
-      margin: 3vw auto;
       display: block;
     }
   }
@@ -67,10 +49,8 @@
   position: relative;
 
   .landing_logo {
-    width: 37vw;
     margin: 0 auto;
     display: block;
-    padding: 5.3vh 0;
   }
 
   .landing_ul {
@@ -79,11 +59,8 @@
     text-align: center;
 
     li {
-      padding: 6.5vh 0;
-
       a {
         color: #FFFFFF;
-        font-size: 9vw;
         font-family: "Didact Gothic", "Roboto Sans", sans-serif;
         text-transform: uppercase;
       }
@@ -108,4 +85,112 @@
 .white {
   color: #FFFFFF;
   transition: color 2s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    .pre {
+      width: 90%;
+      font-size: 6.09vw;
+
+      .mobile {
+        display: inline;
+      }
+
+      .tablet {
+        display: none;
+      }
+
+      div {
+        letter-spacing: 1vw;
+        margin-bottom: 1vw;
+      }
+    }
+
+    .scroll {
+      p {
+        font-size: 3.3vw;
+      }
+
+      img {
+        width: 4.6vw;
+        // height: 2.5vw;
+        margin: 1vw auto 3vw;
+      }
+    }
+  }
+
+  .landing_nav {
+    .landing_logo {
+      width: 37vw;
+      padding: 5.3vh 0;
+    }
+
+    .landing_ul {
+      li {
+        padding: 6.5vh 0;
+
+        a {
+          font-size: 9vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    .pre {
+      width: 95%;
+      font-size: 4.17vw;
+
+      .mobile {
+        display: none;
+      }
+
+      .tablet {
+        display: inline;
+
+        &.marginator {
+          display: block;
+          margin-bottom: 1vw;
+        }
+      }
+
+      div {
+        letter-spacing: 1vw;
+        margin-bottom: 1vw;
+      }
+    }
+
+    .scroll {
+      p {
+        font-size: 1.8vw;
+      }
+
+      img {
+        width: 2.6vw;
+        // height: 2.5vw;
+        margin: 1vw auto 3vw;
+      }
+    }
+  }
+
+  .landing_nav {
+    .landing_logo {
+      width: 37vw;
+      padding: 4.3vh 0;
+    }
+
+    .landing_ul {
+      li {
+        padding: 4.5vh 0;
+
+        a {
+          font-size: 7vw;
+        }
+      }
+
+    }
+  }
 }
