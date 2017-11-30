@@ -62,12 +62,12 @@ a {
 
 .bold {
   font-size: 35px;
+  font-weight: 700;
   vertical-align: bottom; }
 
 #more {
   text-align: center;
-  font-size: 8px; 
-  padding-bottom: 10px; }
+  font-size: 8px; }
 
 #scroll {
   font-size: 8px;
@@ -92,13 +92,10 @@ nav > ul {
 
 #logo-container {
   width: 100%;
-  padding: 20px;
   text-align: center;
-  background-color: black; }
-
-#logo {
-  color: white;
-  font-size: 24px; }
+  background-color: black;
+  height: 23vw;
+  padding: 7.9vw; }
 
 /* Landing */
 /* Career */
@@ -117,14 +114,32 @@ p.job-title {
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    color: #FFFFFF; }
     .container .search_n_find .pre {
-      width: 75vw;
+      width: 93vw;
       margin: 0 auto;
       font-size: 6.47vw;
       font-family: 'Roboto Mono', monospace;
-      font-weight: 100;
-      color: #FFFFFF; }
+      font-weight: 100; }
+      .container .search_n_find .pre div {
+        letter-spacing: 1vw;
+        margin-bottom: 1vw; }
+  .container .scroll {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .container .scroll p {
+      color: #FFFFFF;
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 3.3vw; }
+    .container .scroll img {
+      width: 4.6vw;
+      height: 2.5vw;
+      margin: 3vw auto;
+      display: block; }
 
 .landing_nav {
   width: 100vw;
@@ -152,6 +167,16 @@ p.job-title {
       width: 90vw;
       margin: 0 auto;
       border-top: none; }
+
+.grey {
+  color: #202020; }
+
+.light-grey {
+  color: #3E3D3E; }
+
+.white {
+  color: #FFFFFF;
+  transition: color 2s; }
 
 /*------------ Who We Are (/About) -------------- */
 .about-container {
@@ -196,8 +221,8 @@ p.job-title {
 .bold {
   font-size: 14.5vw;
   vertical-align: bottom;
-  line-height: 1.1; 
-  font-family: 'Playfair Display', serif;}
+  line-height: 1.1;
+  font-family: 'Playfair Display', serif; }
 
 .top-padding {
   padding-top: 40px; }
@@ -207,7 +232,8 @@ p.job-title {
 
 #more {
   text-align: center;
-  font-size: 8px; }
+  font-size: 8px;
+  padding-bottom: 10px; }
 
 #scroll {
   font-size: 8px;
@@ -253,6 +279,8 @@ p.job-title {
     font-size: 4.9vw;
     text-transform: uppercase;
     margin: 0; }
+    .work-container h4 a {
+      font-weight: 100; }
     .work-container h4 .more {
       color: #9B9B9B;
       font-size: 3.5vw;
@@ -340,19 +368,17 @@ p.job-title {
       grid-column: 1 / 4;
       margin-top: 5vw; }
 
-#brand-logo-container {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  background-color: #FFFFFF; }
-  #brand-logo-container #logo {
-    color: #000000;
-    font-size: 24px; }
+.brand_page_logo {
+  width: 37vw; }
 
 .down_arrow,
 .up_arrow {
   width: 4.6vw;
   height: 2.5vw; }
+
+.down_arrow {
+  display: block;
+  margin: 2px auto; }
 
 .brand_dd {
   padding: 0 4.6vw;
@@ -545,15 +571,12 @@ textarea {
   margin: 20px;
   font-size: 30px; }
 
-
 input, textarea {
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
+  -webkit-border-radius: 0; }
 
 @media screen and (max-width: 330px) {
   div.right {
-    text-align: center;
-  }
-}
+    text-align: center; } }
+
 /*# sourceMappingURL=style.css.map */
