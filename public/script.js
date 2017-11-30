@@ -95,7 +95,7 @@ App.controller('aboutController', function($scope) {
   $('#hello-image').delay(2400).fadeOut(800);
 
 
-// Team picture
+  // Team picture
   $('.name-tag').click(highlightPerson);
 
   function highlightPerson() {
@@ -125,13 +125,23 @@ App.controller('aboutController', function($scope) {
 
 });
 
-App.controller('workController', function($scope) {
+App.controller('workController', function($scope, $window) {
   $(window).scrollTop(0);
+
+  let windowWidth = $window.innerWidth;
+
+  if (windowWidth < 768 && windowWidth >= 320) {
+    $scope.size = 'mobile';
+    $scope.initial = '';
+    console.log($scope.size);
+  } else if (windowWidth >= 768 && windowWidth < 900) {
+    $scope.size = 'tablet';
+    $scope.initial = 'T';
+  }
 
   $scope.isActive1 = function (route) {
     if(route === 'work') {return true} else { return false}
   };
-
 });
 
 App.controller('brandController', function($scope, $route, $routeParams, $http) {
@@ -157,7 +167,6 @@ App.controller('brandController', function($scope, $route, $routeParams, $http) 
     console.log("there was an error");
   });
 })
-
 
 App.controller('contactController', function($scope, $http) {
   $(window).scrollTop(0);
@@ -203,16 +212,16 @@ App.controller('careerController', function($scope) {
 });
 
 //DIRECTIVES--------------------------------------------------------------------
-App.directive("navi", function() {
+App.directive('navi', function() {
   return {
-    restrict : "E",
+    restrict: 'E',
     templateUrl: '/views/navigation.html'
   };
 });
 
-App.directive("bavi", function() {
+App.directive('bavi', function() {
   return {
-    restrict : "E",
+    restrict : 'E',
     templateUrl: '/views/brand_navigation.html',
     link: function(scope) {
       $('.openner').click(function() { $('.brand_dd').slideDown() });
@@ -221,7 +230,7 @@ App.directive("bavi", function() {
   };
 });
 
-App.directive("landing", function() {
+App.directive('landing', function() {
   return {
     restrict: 'A',
     link: function(scope) {
@@ -262,7 +271,7 @@ App.directive("landing", function() {
               });
             }
 
-            if (className === ".search_c" || className === ".search_m" || className === ".search_y" || className === ".search_k") {
+            if (className === '.search_c' || className === '.search_m' || className === '.search_y' || className === '.search_k') {
               if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 499) {
                 $(className).css({
                   color: '#FFFFFF',
@@ -305,7 +314,7 @@ App.directive("landing", function() {
   };
 });
 
-App.directive("parallax", function() {
+App.directive('parallax', function() {
   return {
     restrict: 'A',
     link: function(scope) {
