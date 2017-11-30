@@ -2,6 +2,7 @@ var App = angular.module('CMYKApp', ['ngRoute', 'ngTouch']);
 
 //ROUTER------------------------------------------------------------------------
 App.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+
   $routeProvider.when('/', {
     controller: 'mainController',
     templateUrl: '/views/landing.html'
@@ -36,12 +37,18 @@ App.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     enabled: true,
     requireBase: false
   });
+
 }]);
 
 
 // create the controller and inject Angular's $scope
 //CONTROLLERS-------------------------------------------------------------------
+App.controller('globalController', function($scope, $window, $location) {
+  var currentUrl = $window.location.href;
+})
+
 App.controller('mainController', function($scope) {
+
 });
 
 App.controller('aboutController', function($scope) {
@@ -85,7 +92,7 @@ App.controller('aboutController', function($scope) {
   })(jQuery);
 
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
-  $('#hello-image').delay(3000).fadeOut(1000);
+  $('#hello-image').delay(2400).fadeOut(800);
 
 
 // Team picture
@@ -108,17 +115,23 @@ App.controller('aboutController', function($scope) {
   $(document).click(function(){
     if(!$(event.target).is('.name-tag')) {
       $('.name-tag').removeClass('active');
-       $('#group-pic').attr('src', './images/group-photo.png');
-      // $('#group-pic').fadeOut(100, function(){
-      //   $('#group-pic').attr('src', './images/group-photo.png');
-      // }).fadeIn(100);
+      $('#group-pic').attr('src', './images/group-photo.png');
     }
   })
+
+  $scope.isActive = function (route) {
+    if(route === 'about') {return true} else { return false}
+  };
 
 });
 
 App.controller('workController', function($scope) {
   $(window).scrollTop(0);
+
+  $scope.isActive1 = function (route) {
+    if(route === 'work') {return true} else { return false}
+  };
+
 });
 
 App.controller('brandController', function($scope, $route, $routeParams, $http) {
@@ -176,6 +189,13 @@ App.controller('contactController', function($scope, $http) {
   $('#close').click(function(){
     $('#modal').hide();
   });
+
+  $scope.isActive2 = function (route) {
+    if(route === 'contact') {
+      return true;
+    } else { return false;}
+  };
+
 });
 
 App.controller('careerController', function($scope) {
@@ -353,3 +373,12 @@ App.directive('carousel', function($timeout) {
     }
   }
 });
+
+$(document).ready(function(){
+  $('.nav-link').click(function(){
+    $('#nav').addClass('test-nav')
+    $('.nav-link').removeClass('active-nav');
+    $(this).addClass('active-nav');
+    // $scope.digest();
+  })
+})
