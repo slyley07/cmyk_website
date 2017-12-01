@@ -402,7 +402,5 @@ $(document).ready(function(){
     $('#nav').addClass('test-nav')
     $('.nav-link').removeClass('active-nav');
     $(this).addClass('active-nav');
-    console.log("avasd - fclikc sd ")
-    // $scope.digest();
   })
 })
