@@ -36,7 +36,7 @@
 				</li>
 
 				<li class="brand_names" ng-repeat="brand in brands">
-          <a ng-href="/brand/{{brand.class}}">
+          <a ng-href="{{ brand.name.toLowerCase() === param ? '#' : '/brand/' + brand.class }}" ng-class="{{ brand.name.toLowerCase() === param ? 'slide_up' : '' }}" ng-click="slideUp(brand.class.toLowerCase())">
             {{ brand.name }}
           </a>
         </li>
