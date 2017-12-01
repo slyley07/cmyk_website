@@ -147,9 +147,7 @@ App.controller('workController', function($scope, $window) {
 App.controller('brandController', function($scope, $route, $routeParams, $http) {
   var param = $routeParams.param;
 
-  // console.log(param);
-
-  // $scope.brand = $routeParams.param;
+  $scope.param = param;
 
   $http({
     method: 'GET',
@@ -157,7 +155,6 @@ App.controller('brandController', function($scope, $route, $routeParams, $http) 
   }).then(function (success){
     $scope.brands = success.data;
     success.data.forEach(function(json) {
-      console.log($routeParams.param + ": ", json.class === param);
       if (json.class === param) {
         $scope.brandData = json;
       }
@@ -222,10 +219,27 @@ App.directive('navi', function() {
 App.directive('bavi', function() {
   return {
     restrict : 'E',
+    scope: {
+      param: '=param',
+      brandData: '=brandData',
+      brands: '=brands'
+    },
     templateUrl: '/views/brand_navigation.html',
-    link: function(scope) {
-      $('.openner').click(function() { $('.brand_dd').slideDown() });
-      $('.slide_up').click(function() { $('.brand_dd').slideUp() });
+    link: function(scope, element) {
+
+      scope.slideUp = function(brand) {
+        if (brand === scope.param) {
+          $('.brand_dd').slideUp()
+        }
+      }
+
+      $('.openner').click(function() {
+        $('.brand_dd').slideDown()
+      });
+
+      $('.slide_up').click(function() {
+        $('.brand_dd').slideUp()
+      });
     }
   };
 });
