@@ -258,7 +258,8 @@ p.job-title {
   font-family: 'Didact Gothic'; }
 
 #who-we-are {
-  font-size: 7.5vw; }
+  font-size: 7.5vw; 
+  margin-bottom: 0px;}
 
 #rotate {
   height: 125px;
@@ -266,12 +267,16 @@ p.job-title {
 
 #blurb {
   text-transform: uppercase;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 100;
+  line-height: 1.2;
   font-size: 7.5vw; }
 
-.bold {
+.bolds {
   font-size: 14.5vw;
   vertical-align: bottom;
-  line-height: 1.1;
+  line-height: 1.0;
+  font-weight: 100;
   font-family: 'Playfair Display', serif; }
 
 .top-padding {
@@ -665,7 +670,7 @@ input, textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0; }
 
-@media screen and (min-width: 330px) {
+@media screen and (max-width: 330px) {
   div.right {
     text-align: center; } }
 @media screen and (min-width: 768px) {
