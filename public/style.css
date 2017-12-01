@@ -324,7 +324,11 @@ p.job-title {
   width: 38px; }
 
 .ig-icon > img {
-  width: 40px; }
+  width: 25px;
+  margin-top: 5px; }
+
+ul#footer {
+  margin-bottom: 8px; } 
 
 #mobile-team {
   display: none; }
