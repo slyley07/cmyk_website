@@ -252,76 +252,91 @@ App.directive('landing', function() {
         $(window).scrollTop(0);
         $(window).scroll(function() {
 
-          if ($(this).scrollTop() > 2) {
+          if ($(this).scrollTop() > 6) {
             // console.log('pre grey');
             $('.search_n_find .pre').css({
               color: '#202020',
-              transition: 'color 2s'
+              transition: 'color 1s'
             });
           } else {
             console.log('pre white');
             $('.search_n_find .pre').css({
               color: '#FFFFFF !important',
-              transition: 'color 2s'
+              transition: 'color 1s'
             });
           }
 
           var scrollingMagic = function (className, scroll, scroll2) {
-            if ($(window).scrollTop() > scroll && $(window).scrollTop() < 500) {
+            if ($(window).scrollTop() > scroll && $(window).scrollTop() < 1500) {
               $(className).css({
                 color: '#FFFFFF',
-                transition: 'color 2s'
+                transition: 'color 1s'
               });
-            } else if ($(window).scrollTop() > 500) {
+            } else if ($(window).scrollTop() > 1500) {
               $(className).css({
                 color: '#3E3D3E',
-                transition: 'color 2s'
+                transition: 'color 1s'
               });
 
             } else {
               $(className).css({
                 color: '#202020',
-                transition: 'color 2s'
+                transition: 'color 1s'
               });
             }
 
             if (className === '.search_c' || className === '.search_m' || className === '.search_y' || className === '.search_k') {
-              if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 499) {
+              if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 1499) {
                 $(className).css({
                   color: '#FFFFFF',
-                  transition: 'color 2s'
+                  transition: 'color 1s'
                 });
               }
             }
 
-            if ($(window).scrollTop() < 2) {
+            if ($(window).scrollTop() < 6) {
               $(className).css({
                 color: '#FFFFFF',
-                transition: 'color 2s'
+                transition: 'color 1s'
               });
             }
 
-            if ($(window).scrollTop() < 2) {
+            if ($(window).scrollTop() < 6) {
               $('.pre').css({
                 color: '#FFFFFF',
-                transition: 'color 2s'
+                transition: 'color 1s'
               });
             }
           }
 
-          scrollingMagic('.search_brand', 50);
-          scrollingMagic('.search_create', 100);
-          scrollingMagic('.search_unique', 150);
-          scrollingMagic('.search_make', 200);
-          scrollingMagic('.search_passion', 250);
-          scrollingMagic('.search_style', 300);
-          scrollingMagic('.search_design', 350);
-          scrollingMagic('.search_think', 400);
-          scrollingMagic('.search_solution', 450);
-          scrollingMagic('.search_c', 500, 100);
-          scrollingMagic('.search_m', 550, 200);
-          scrollingMagic('.search_y', 600, 300);
-          scrollingMagic('.search_k', 650, 400);
+          // scrollingMagic('.search_brand', 50);
+          // scrollingMagic('.search_create', 100);
+          // scrollingMagic('.search_unique', 150);
+          // scrollingMagic('.search_make', 200);
+          // scrollingMagic('.search_passion', 250);
+          // scrollingMagic('.search_style', 300);
+          // scrollingMagic('.search_design', 350);
+          // scrollingMagic('.search_think', 400);
+          // scrollingMagic('.search_solution', 450);
+          // scrollingMagic('.search_c', 500, 100);
+          // scrollingMagic('.search_m', 550, 200);
+          // scrollingMagic('.search_y', 600, 300);
+          // scrollingMagic('.search_k', 650, 400);
+
+          // 3X
+          scrollingMagic('.search_brand', 150);
+          scrollingMagic('.search_create', 300);
+          scrollingMagic('.search_unique', 450);
+          scrollingMagic('.search_make', 600);
+          scrollingMagic('.search_passion', 750);
+          scrollingMagic('.search_style', 900);
+          scrollingMagic('.search_design', 1050);
+          scrollingMagic('.search_think', 1200);
+          scrollingMagic('.search_solution', 1350);
+          scrollingMagic('.search_c', 1500, 300);
+          scrollingMagic('.search_m', 1650, 600);
+          scrollingMagic('.search_y', 1800, 900);
+          scrollingMagic('.search_k', 1950, 1200);
 
           // scrollingMagic('.search_brand', 500);
           // scrollingMagic('.search_create', 1000);
