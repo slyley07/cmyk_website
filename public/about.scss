@@ -149,6 +149,14 @@ ul#footer {
   color: red;
 }
 
+.mobile-display {
+  display: none;
+}
+
+.desktop-display {
+  font-size: 35px;
+  text-transform: uppercase;
+}
 
 @media screen and (max-width: 768px) {
   #mobile-team {
@@ -156,6 +164,16 @@ ul#footer {
   }
 
   #desktop-team {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-display {
+    display: block;
+  }
+
+  .desktop-display {
     display: none;
   }
 }
