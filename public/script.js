@@ -322,6 +322,20 @@ App.directive('landing', function() {
           scrollingMagic('.search_m', 550, 200);
           scrollingMagic('.search_y', 600, 300);
           scrollingMagic('.search_k', 650, 400);
+
+          // scrollingMagic('.search_brand', 500);
+          // scrollingMagic('.search_create', 1000);
+          // scrollingMagic('.search_unique', 1500);
+          // scrollingMagic('.search_make', 2000);
+          // scrollingMagic('.search_passion', 2500);
+          // scrollingMagic('.search_style', 3000);
+          // scrollingMagic('.search_design', 3500);
+          // scrollingMagic('.search_think', 4000);
+          // scrollingMagic('.search_solution', 4500);
+          // scrollingMagic('.search_c', 5000, 5000);
+          // scrollingMagic('.search_m', 5500, 2000);
+          // scrollingMagic('.search_y', 6000, 3000);
+          // scrollingMagic('.search_k', 6500, 4000);
         });
       });
     }
