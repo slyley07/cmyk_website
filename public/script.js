@@ -272,7 +272,7 @@ App.directive('landing', function() {
                 color: '#FFFFFF',
                 transition: 'color 1s'
               });
-            } else if ($(window).scrollTop() > 1500) {
+            } else if ($(window).scrollTop() > 1800) {
               $(className).css({
                 // color: 'black',
                 color: '#3E3D3E',
