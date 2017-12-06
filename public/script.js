@@ -290,7 +290,7 @@ App.directive('landing', function() {
               if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 1499) {
                 $(className).css({
                   color: '#FFFFFF',
-                  transition: 'color 1s'
+                  transition: 'color 0.5s'
                 });
               }
             }
