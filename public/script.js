@@ -274,7 +274,8 @@ App.directive('landing', function() {
               });
             } else if ($(window).scrollTop() > 1500) {
               $(className).css({
-                color: '#3E3D3E',
+                color: 'black',
+                // color: '#3E3D3E',
                 transition: 'color 1s'
               });
 
