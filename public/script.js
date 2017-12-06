@@ -335,9 +335,9 @@ App.directive('landing', function() {
           scrollingMagic('.search_think', 1200);
           scrollingMagic('.search_solution', 1350);
           scrollingMagic('.search_c', 1500, 300);
-          scrollingMagic('.search_m', 1650, 600);
-          scrollingMagic('.search_y', 1800, 900);
-          scrollingMagic('.search_k', 1950, 1200);
+          scrollingMagic('.search_m', 1650, 300);
+          scrollingMagic('.search_y', 1800, 300);
+          scrollingMagic('.search_k', 1950, 300);
 
           // scrollingMagic('.search_brand', 500);
           // scrollingMagic('.search_create', 1000);
