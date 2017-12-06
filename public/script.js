@@ -267,7 +267,7 @@ App.directive('landing', function() {
           }
 
           var scrollingMagic = function (className, scroll, scroll2) {
-            if ($(window).scrollTop() > scroll && $(window).scrollTop() < 1500) {
+            if ($(window).scrollTop() > scroll && $(window).scrollTop() < 1800) {
               $(className).css({
                 color: '#FFFFFF',
                 transition: 'color 1s'
@@ -287,7 +287,7 @@ App.directive('landing', function() {
             }
 
             if (className === '.search_c' || className === '.search_m' || className === '.search_y' || className === '.search_k') {
-              if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 1499) {
+              if ($(window).scrollTop() > scroll || $(window).scrollTop() > scroll2 && $(window).scrollTop() < 1799) {
                 $(className).css({
                   color: '#FFFFFF',
                   transition: 'color 0.5s'
@@ -334,10 +334,10 @@ App.directive('landing', function() {
           scrollingMagic('.search_design', 1050);
           scrollingMagic('.search_think', 1200);
           scrollingMagic('.search_solution', 1350);
-          scrollingMagic('.search_c', 1500, 300);
-          scrollingMagic('.search_m', 1500, 600);
-          scrollingMagic('.search_y', 1500, 900);
-          scrollingMagic('.search_k', 1500, 1200);
+          scrollingMagic('.search_c', 1800, 300);
+          scrollingMagic('.search_m', 1800, 600);
+          scrollingMagic('.search_y', 1800, 900);
+          scrollingMagic('.search_k', 1800, 1200);
 
           // scrollingMagic('.search_brand', 500);
           // scrollingMagic('.search_create', 1000);
