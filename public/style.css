@@ -76,7 +76,9 @@ a {
 /* nav -- feel free to remove / modify styling for navigation */
 nav {
   text-align: center;
-  background-color: white; }
+  background-color: white; 
+  max-width: 800px;
+  margin: 0 auto;}
 
 nav > ul {
   padding: 0px;
@@ -711,6 +713,28 @@ input, textarea {
   .desktop-display {
     display: none;
   }
+}
+
+@media screen and (min-width: 600px) {
+  #logo-container {
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brand_page_logo {
+    width: 250px;
+  }
+
+  .container .search_n_find {
+    width: 90vw;
+  }
+
+  .container .pre {
+    font-size: 40px;
+  }
+  
 }
 
 /*# sourceMappingURL=style.css.map */
